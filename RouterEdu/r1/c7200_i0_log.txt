@@ -1,557 +1,1530 @@
-Dec 13 07:52:14.015 disk0: C/H/S settings = 1024/4/32
-Dec 13 07:52:14.066 CONSOLE: console managed by I/O board
-Dec 13 07:52:14.457 C7200_BOOT: starting instance (CPU0 PC=0xffffffffbfc00000,idle_pc=0x6095ca40,JIT on)
-Dec 13 07:52:14.457 CPU0: CPU_STATE: Starting CPU (old state=2)...
-Dec 13 07:52:14.549 ROM: Microcode has started.
-Dec 13 07:52:22.134 ROM: trying to read bootvar 'WARM_REBOOT'
-Dec 13 07:52:22.175 ROM: unhandled syscall 0x00000032 at pc=0x608487b0 (a1=0x00000019,a2=0x64cb7930,a3=0x652b3288)
-Dec 13 07:52:22.175 CPU0: IO_FPGA: read from addr 0x224, pc=0x60925770 (size=1)
-Dec 13 07:52:22.273 ROM: trying to read bootvar 'RANDOM_NUM'
-Dec 13 07:52:22.289 CPU0: MP_FPGA: writing reg 0x70 at pc=0x6095ce24 (data=0x7e)
-Dec 13 07:52:22.289 CPU0: PCI: read request at pc=0x60943c1c: bus=0,device=0,function=0,reg=0x08
-Dec 13 07:52:22.289 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=0,function=0,reg=0x00
-Dec 13 07:52:22.289 CPU0: PCI: write request (data=0x0000011f) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x04
-Dec 13 07:52:22.289 CPU0: PCI: write request (data=0x00000000) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x10
-Dec 13 07:52:22.289 CPU0: PCI: write request (data=0x10000000) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x14
-Dec 13 07:52:22.289 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=0,function=0,reg=0x00
-Dec 13 07:52:22.289 CPU0: PCI: write request (data=0xc0000000) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x28
-Dec 13 07:52:22.289 CPU0: PCI: write request (data=0xd0000000) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x2c
-Dec 13 07:52:22.289 CPU0: PCI: write request (data=0x00000000) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x30
-Dec 13 07:52:22.289 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=0,function=0,reg=0x34
-Dec 13 07:52:22.289 CPU0: PCI: write request (data=0x00000001) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x34
-Dec 13 07:52:22.289 CPU0: PCI: write request (data=0x00000000) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x18
-Dec 13 07:52:22.289 CPU0: PCI: write request (data=0x00000000) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x1c
-Dec 13 07:52:22.289 CPU0: PCI: write request (data=0x000000ff) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x0c
-Dec 13 07:52:22.290 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=1,function=0,reg=0x00
-Dec 13 07:52:22.290 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=1,function=0,reg=0x40
-Dec 13 07:52:22.290 CPU0: PCI: write request (data=0x00000143) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x04
-Dec 13 07:52:22.290 CPU0: PCI: write request (data=0x00000010) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x0c
-Dec 13 07:52:22.290 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:22.290 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:22.290 CPU0: PCI: write request (data=0xffff9f40) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x1c
-Dec 13 07:52:22.290 CPU0: PCI: write request (data=0x4af04880) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x20
-Dec 13 07:52:22.290 CPU0: PCI: write request (data=0x4bf04b00) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x24
-Dec 13 07:52:22.290 CPU0: PCI: write request (data=0x00030000) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x3c
-Dec 13 07:52:22.290 CPU0: PCI: write request (data=0x00080000) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x40
-Dec 13 07:52:22.290 CPU0: PCI: write request (data=0x00008020) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x44
-Dec 13 07:52:22.290 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=2,function=0,reg=0x00
-Dec 13 07:52:22.290 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=2,function=0,reg=0x40
-Dec 13 07:52:22.291 CPU0: PCI: write request (data=0x00000144) at pc=0x60943d4c: bus=0,device=2,function=0,reg=0x04
-Dec 13 07:52:22.291 CPU0: PCI: write request (data=0x0000ff00) at pc=0x60943d4c: bus=0,device=2,function=0,reg=0x0c
-Dec 13 07:52:22.291 CPU0: PCI: write request (data=0x18090400) at pc=0x60943d4c: bus=0,device=2,function=0,reg=0x18
-Dec 13 07:52:22.291 PCI: PCI bridge 0,2,0 -> pri: 00, sec: 04, sub: 09
-Dec 13 07:52:22.291 CPU0: PCI: write request (data=0xffff9f40) at pc=0x60943d4c: bus=0,device=2,function=0,reg=0x1c
-Dec 13 07:52:22.291 CPU0: PCI: write request (data=0x4af04880) at pc=0x60943d4c: bus=0,device=2,function=0,reg=0x20
-Dec 13 07:52:22.291 CPU0: PCI: write request (data=0x4cf04b00) at pc=0x60943d4c: bus=0,device=2,function=0,reg=0x24
-Dec 13 07:52:22.291 CPU0: PCI: write request (data=0x00030000) at pc=0x60943d4c: bus=0,device=2,function=0,reg=0x3c
-Dec 13 07:52:22.291 CPU0: PCI: write request (data=0x00080000) at pc=0x60943d4c: bus=0,device=2,function=0,reg=0x40
-Dec 13 07:52:22.291 CPU0: PCI: write request (data=0x00008020) at pc=0x60943d4c: bus=0,device=2,function=0,reg=0x44
-Dec 13 07:52:22.291 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=3,function=0,reg=0x00
-Dec 13 07:52:22.291 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=3,function=0,reg=0x40
-Dec 13 07:52:22.291 CPU0: PCI: write request (data=0x00000143) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x04
-Dec 13 07:52:22.291 CPU0: PCI: write request (data=0x00000010) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x0c
-Dec 13 07:52:22.291 CPU0: PCI: write request (data=0x18000200) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x18
-Dec 13 07:52:22.291 PCI: PCI bridge 0,3,0 -> pri: 00, sec: 02, sub: 00
-Dec 13 07:52:22.291 CPU0: PCI: write request (data=0xffffffa0) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x1c
-Dec 13 07:52:22.291 CPU0: PCI: write request (data=0x4f704d00) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x20
-Dec 13 07:52:22.291 CPU0: PCI: write request (data=0x4cf04c00) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x24
-Dec 13 07:52:22.291 CPU0: PCI: write request (data=0x00030000) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x3c
-Dec 13 07:52:22.291 CPU0: PCI: write request (data=0x00080000) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x40
-Dec 13 07:52:22.291 CPU0: PCI: write request (data=0x00008020) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x44
-Dec 13 07:52:22.291 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=4,function=0,reg=0x00
-Dec 13 07:52:22.291 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=4,function=0,reg=0x40
-Dec 13 07:52:22.291 CPU0: PCI: write request (data=0x00000144) at pc=0x60943d4c: bus=0,device=4,function=0,reg=0x04
-Dec 13 07:52:22.291 CPU0: PCI: write request (data=0x0000ff00) at pc=0x60943d4c: bus=0,device=4,function=0,reg=0x0c
-Dec 13 07:52:22.291 CPU0: PCI: write request (data=0x180f0a00) at pc=0x60943d4c: bus=0,device=4,function=0,reg=0x18
-Dec 13 07:52:22.291 PCI: PCI bridge 0,4,0 -> pri: 00, sec: 10, sub: 15
-Dec 13 07:52:22.291 CPU0: PCI: write request (data=0xffffffa0) at pc=0x60943d4c: bus=0,device=4,function=0,reg=0x1c
-Dec 13 07:52:22.291 CPU0: PCI: write request (data=0x4f704d00) at pc=0x60943d4c: bus=0,device=4,function=0,reg=0x20
-Dec 13 07:52:22.291 CPU0: PCI: write request (data=0x4cf04b00) at pc=0x60943d4c: bus=0,device=4,function=0,reg=0x24
-Dec 13 07:52:22.291 CPU0: PCI: write request (data=0x00030000) at pc=0x60943d4c: bus=0,device=4,function=0,reg=0x3c
-Dec 13 07:52:22.291 CPU0: PCI: write request (data=0x00080000) at pc=0x60943d4c: bus=0,device=4,function=0,reg=0x40
-Dec 13 07:52:22.291 CPU0: PCI: write request (data=0x00008020) at pc=0x60943d4c: bus=0,device=4,function=0,reg=0x44
-Dec 13 07:52:22.296 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=5,function=0,reg=0x00
-Dec 13 07:52:22.296 CPU0: PCI: write request (data=0x000001c3) at pc=0x60943d4c: bus=0,device=5,function=0,reg=0x04
-Dec 13 07:52:22.296 CPU0: PCI: write request (data=0x00000400) at pc=0x60943d4c: bus=0,device=5,function=0,reg=0x10
-Dec 13 07:52:22.623 CPU0: JIT: partial JIT flush (count=176)
-Dec 13 07:52:22.658 CPU0: JIT: flushing data structures (compiled pages=231)
-Dec 13 07:52:22.695 CPU0: JIT: partial JIT flush (count=176)
-Dec 13 07:52:22.707 ROM: trying to read bootvar 'BOOT'
-Dec 13 07:52:22.707 ROM: trying to read bootvar 'CONFIG_FILE'
-Dec 13 07:52:22.707 ROM: trying to read bootvar 'BOOTLDR'
-Dec 13 07:52:22.707 ROM: trying to read bootvar 'RSHELF'
-Dec 13 07:52:22.707 ROM: trying to read bootvar 'DSHELF'
-Dec 13 07:52:22.707 ROM: trying to read bootvar 'DSHELFINFO'
-Dec 13 07:52:22.707 ROM: trying to read bootvar 'RESET_COUNTER'
-Dec 13 07:52:22.707 ROM: trying to read bootvar 'CHRG_LOCRECSN'
-Dec 13 07:52:22.707 ROM: trying to read bootvar 'CHRG_ID'
-Dec 13 07:52:22.707 ROM: trying to read bootvar 'SLOTCACHE'
-Dec 13 07:52:22.707 ROM: trying to read bootvar 'OVERTEMP'
-Dec 13 07:52:22.707 ROM: trying to read bootvar 'DIAG'
-Dec 13 07:52:22.707 ROM: trying to read bootvar 'WARM_REBOOT'
-Dec 13 07:52:22.739 CPU0: JIT: flushing data structures (compiled pages=236)
-Dec 13 07:52:22.757 ROM: unhandled syscall 0x0000007c at pc=0x608487b0 (a1=0x00000ff0,a2=0x00000000,a3=0x65381788)
-Dec 13 07:52:22.757 ROM: unhandled syscall 0x0000007c at pc=0x608487b0 (a1=0x6316dafd,a2=0x00000016,a3=0x650eea8c)
-Dec 13 07:52:22.757 CPU0: PCI: read request at pc=0x609821a4: bus=0,device=0,function=0,reg=0x08
-Dec 13 07:52:22.757 CPU0: CLPD6729: ext reg index 0x03 at pc=0x60987ec8
-Dec 13 07:52:22.757 CPU0: CLPD6729: ext reg index 0x03 at pc=0x60987ec8
-Dec 13 07:52:22.759 CPU0: CLPD6729: ext reg index 0x09 at pc=0x60987ec8
-Dec 13 07:52:22.759 CPU0: CLPD6729: ext reg index 0x09 at pc=0x60987ec8
-Dec 13 07:52:22.759 CPU0: CLPD6729: ext reg index 0x05 at pc=0x60987ec8
-Dec 13 07:52:22.759 CPU0: CLPD6729: ext reg index 0x05 at pc=0x60987ec8
-Dec 13 07:52:22.770 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:22.770 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
-Dec 13 07:52:22.770 CPU0: PCI: read request at pc=0x60943e40: bus=4,device=0,function=0,reg=0x00
-Dec 13 07:52:22.770 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:22.770 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:22.770 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:22.770 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
-Dec 13 07:52:22.770 CPU0: PCI: write request (data=0x00000142) at pc=0x60943d4c: bus=4,device=0,function=0,reg=0x04
-Dec 13 07:52:22.770 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:22.770 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:22.770 CPU0: PCI: write request (data=0x1800020a) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x18
-Dec 13 07:52:22.770 PCI: PCI bridge 0,3,0 -> pri: 10, sec: 02, sub: 00
-Dec 13 07:52:22.770 CPU0: PCI: read request at pc=0x60943e40: bus=10,device=0,function=0,reg=0x00
-Dec 13 07:52:22.770 CPU0: PCI: write request (data=0x18000200) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x18
-Dec 13 07:52:22.770 PCI: PCI bridge 0,3,0 -> pri: 00, sec: 02, sub: 00
-Dec 13 07:52:22.770 CPU0: PCI: write request (data=0x1800020a) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x18
-Dec 13 07:52:22.770 PCI: PCI bridge 0,3,0 -> pri: 10, sec: 02, sub: 00
-Dec 13 07:52:22.770 CPU0: PCI: write request (data=0x00000142) at pc=0x60943d4c: bus=10,device=0,function=0,reg=0x04
-Dec 13 07:52:22.770 CPU0: PCI: write request (data=0x18000200) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x18
-Dec 13 07:52:22.770 PCI: PCI bridge 0,3,0 -> pri: 00, sec: 02, sub: 00
-Dec 13 07:52:22.822 Calendar: reset
-Dec 13 07:52:22.828 CPU0: JIT: partial JIT flush (count=171)
-Dec 13 07:52:22.849 CPU0: JIT: flushing data structures (compiled pages=240)
-Dec 13 07:52:22.882 CPU0: JIT: partial JIT flush (count=196)
-Dec 13 07:52:22.899 ROM: trying to read bootvar 'BOOTLDR'
-Dec 13 07:52:22.899 ROM: trying to read bootvar 'CONFIG_FILE'
-Dec 13 07:52:22.976 CPU0: MP_FPGA: writing reg 0x70 at pc=0x609615d0 (data=0x2)
-Dec 13 07:52:23.045 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.045 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
-Dec 13 07:52:23.045 CPU0: PCI: read request at pc=0x60943e40: bus=4,device=1,function=0,reg=0x00
-Dec 13 07:52:23.045 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.045 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.045 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.045 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
-Dec 13 07:52:23.045 CPU0: PCI: read request at pc=0x60943e40: bus=4,device=1,function=0,reg=0x08
-Dec 13 07:52:23.045 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.045 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.045 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.045 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
-Dec 13 07:52:23.045 CPU0: PCI: read request at pc=0x60943e40: bus=4,device=1,function=0,reg=0x00
-Dec 13 07:52:23.045 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.045 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.046 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
-Dec 13 07:52:23.046 CPU0: PCI: read request at pc=0x60943e40: bus=4,device=1,function=0,reg=0x40
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.046 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.046 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0xffff0000) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x04
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.046 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.046 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x0000ff08) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x0c
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.046 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.046 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x18050504) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x18
-Dec 13 07:52:23.046 PCI: PCI bridge 4,1,0 -> pri: 04, sec: 05, sub: 05
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.046 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.046 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x02805f40) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x1c
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.046 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.046 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x48f04880) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x20
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.046 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.046 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x0001ff01) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x24
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.046 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.046 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x00000000) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x30
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.046 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.046 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x03030000) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x3c
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.046 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.046 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x02000000) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x40
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.046 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.046 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x00000000) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x64
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.046 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.046 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.046 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
-Dec 13 07:52:23.047 CPU0: PCI: write request (data=0x000001ff) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x68
-Dec 13 07:52:23.047 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.047 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.047 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.047 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
-Dec 13 07:52:23.047 CPU0: PCI: write request (data=0x00000147) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x04
-Dec 13 07:52:23.047 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.047 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.100 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x00
-Dec 13 07:52:23.100 CPU0: PCI: write request (data=0x00000006) at pc=0x60943d4c: bus=0,device=6,function=0,reg=0x04
-Dec 13 07:52:23.100 CPU0: PCI: write request (data=0x480c0000) at pc=0x60943d4c: bus=0,device=6,function=0,reg=0x14
-Dec 13 07:52:23.100 C7200-IO-FE(0): registers are mapped at 0x480c0000
-Dec 13 07:52:23.100 CPU0: PCI: write request (data=0x0000ff00) at pc=0x60943d4c: bus=0,device=6,function=0,reg=0x0c
-Dec 13 07:52:23.104 CPU0: JIT: flushing data structures (compiled pages=239)
-Dec 13 07:52:23.114 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x08
-Dec 13 07:52:23.122 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.122 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
-Dec 13 07:52:23.122 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x00
-Dec 13 07:52:23.122 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.122 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.122 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.122 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
-Dec 13 07:52:23.122 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x00
-Dec 13 07:52:23.122 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.122 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.122 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.122 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
-Dec 13 07:52:23.122 CPU0: PCI: write request (data=0x00000006) at pc=0x60943d4c: bus=5,device=0,function=0,reg=0x04
-Dec 13 07:52:23.122 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.122 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.122 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.122 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
-Dec 13 07:52:23.122 CPU0: PCI: write request (data=0x48800000) at pc=0x60943d4c: bus=5,device=0,function=0,reg=0x14
-Dec 13 07:52:23.123 PA-FE-TX(1): registers are mapped at 0x48800000
-Dec 13 07:52:23.123 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.123 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.123 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.123 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
-Dec 13 07:52:23.123 CPU0: PCI: write request (data=0x0000ff00) at pc=0x60943d4c: bus=5,device=0,function=0,reg=0x0c
-Dec 13 07:52:23.123 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.123 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.126 C7200-IO-FE(0): unicast MAC address: ca:00:1e:e4:00:00
-Dec 13 07:52:23.128 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.128 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
-Dec 13 07:52:23.128 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x08
-Dec 13 07:52:23.128 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.128 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.129 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.129 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
-Dec 13 07:52:23.129 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=1,function=0,reg=0x00
-Dec 13 07:52:23.129 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=1,function=0,reg=0x00).
-Dec 13 07:52:23.129 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.129 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.129 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.129 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
-Dec 13 07:52:23.129 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=2,function=0,reg=0x00
-Dec 13 07:52:23.129 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=2,function=0,reg=0x00).
-Dec 13 07:52:23.129 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.129 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.129 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.129 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
-Dec 13 07:52:23.129 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=3,function=0,reg=0x00
-Dec 13 07:52:23.129 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=3,function=0,reg=0x00).
-Dec 13 07:52:23.129 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.129 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.129 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.129 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
-Dec 13 07:52:23.129 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=4,function=0,reg=0x00
-Dec 13 07:52:23.129 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=4,function=0,reg=0x00).
-Dec 13 07:52:23.129 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.129 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.129 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.129 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
-Dec 13 07:52:23.129 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=5,function=0,reg=0x00
-Dec 13 07:52:23.129 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=5,function=0,reg=0x00).
-Dec 13 07:52:23.129 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.130 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.130 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.130 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
-Dec 13 07:52:23.130 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=6,function=0,reg=0x00
-Dec 13 07:52:23.130 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=6,function=0,reg=0x00).
-Dec 13 07:52:23.130 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.130 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.130 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.130 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
-Dec 13 07:52:23.130 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=7,function=0,reg=0x00
-Dec 13 07:52:23.130 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=7,function=0,reg=0x00).
-Dec 13 07:52:23.130 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.130 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.130 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.130 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
-Dec 13 07:52:23.130 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=8,function=0,reg=0x00
-Dec 13 07:52:23.130 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=8,function=0,reg=0x00).
-Dec 13 07:52:23.130 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.130 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.130 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.130 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
-Dec 13 07:52:23.130 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=9,function=0,reg=0x00
-Dec 13 07:52:23.130 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=9,function=0,reg=0x00).
-Dec 13 07:52:23.130 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.130 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.130 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.130 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
-Dec 13 07:52:23.130 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=10,function=0,reg=0x00
-Dec 13 07:52:23.130 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=10,function=0,reg=0x00).
-Dec 13 07:52:23.130 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.130 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.130 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.130 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
-Dec 13 07:52:23.130 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=11,function=0,reg=0x00
-Dec 13 07:52:23.130 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=11,function=0,reg=0x00).
-Dec 13 07:52:23.130 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.130 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.130 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.130 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
-Dec 13 07:52:23.130 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=12,function=0,reg=0x00
-Dec 13 07:52:23.130 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=12,function=0,reg=0x00).
-Dec 13 07:52:23.130 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.130 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.130 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.130 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
-Dec 13 07:52:23.130 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=13,function=0,reg=0x00
-Dec 13 07:52:23.130 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=13,function=0,reg=0x00).
-Dec 13 07:52:23.130 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.130 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.130 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.130 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
-Dec 13 07:52:23.130 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=14,function=0,reg=0x00
-Dec 13 07:52:23.130 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=14,function=0,reg=0x00).
-Dec 13 07:52:23.130 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.130 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.130 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.130 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
-Dec 13 07:52:23.130 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=15,function=0,reg=0x00
-Dec 13 07:52:23.130 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=15,function=0,reg=0x00).
-Dec 13 07:52:23.130 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.130 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.138 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x08
-Dec 13 07:52:23.139 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.139 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
-Dec 13 07:52:23.139 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x08
-Dec 13 07:52:23.139 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.139 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.142 PA-FE-TX(1): unicast MAC address: ca:00:1e:e4:00:1c
-Dec 13 07:52:23.142 C7200-IO-FE(0): unicast MAC address: ca:00:1e:e4:00:00
-Dec 13 07:52:23.144 CPU0: JIT: partial JIT flush (count=190)
-Dec 13 07:52:23.175 CPU0: JIT: flushing data structures (compiled pages=237)
-Dec 13 07:52:23.222 CPU0: JIT: partial JIT flush (count=190)
-Dec 13 07:52:23.257 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x08
-Dec 13 07:52:23.259 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.259 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
-Dec 13 07:52:23.259 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x08
-Dec 13 07:52:23.259 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.259 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.262 CPU0: JIT: flushing data structures (compiled pages=242)
-Dec 13 07:52:23.268 PA-FE-TX(1): unicast MAC address: ca:00:1e:e4:00:1c
-Dec 13 07:52:23.268 C7200-IO-FE(0): unicast MAC address: ca:00:1e:e4:00:00
-Dec 13 07:52:23.303 CPU0: JIT: partial JIT flush (count=176)
-Dec 13 07:52:23.309 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x08
-Dec 13 07:52:23.313 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.313 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
-Dec 13 07:52:23.313 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x08
-Dec 13 07:52:23.313 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.313 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.314 C7200-IO-FE(0): unicast MAC address: ca:00:1e:e4:00:00
-Dec 13 07:52:23.320 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x08
-Dec 13 07:52:23.321 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.321 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
-Dec 13 07:52:23.321 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x08
-Dec 13 07:52:23.321 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.321 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.330 PA-FE-TX(1): unicast MAC address: ca:00:1e:e4:00:1c
-Dec 13 07:52:23.330 C7200-IO-FE(0): unicast MAC address: ca:00:1e:e4:00:00
-Dec 13 07:52:23.435 CPU0: JIT: flushing data structures (compiled pages=238)
-Dec 13 07:52:23.455 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x08
-Dec 13 07:52:23.460 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.460 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
-Dec 13 07:52:23.460 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x08
-Dec 13 07:52:23.460 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.461 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.461 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x08
-Dec 13 07:52:23.462 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.462 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
-Dec 13 07:52:23.462 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x08
-Dec 13 07:52:23.462 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:23.462 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:23.470 CPU0: JIT: partial JIT flush (count=198)
-Dec 13 07:52:23.471 PA-FE-TX(1): unicast MAC address: ca:00:1e:e4:00:1c
-Dec 13 07:52:23.471 C7200-IO-FE(0): unicast MAC address: ca:00:1e:e4:00:00
-Dec 13 07:52:23.500 CPU0: JIT: flushing data structures (compiled pages=235)
-Dec 13 07:52:23.536 CPU0: JIT: partial JIT flush (count=188)
-Dec 13 07:52:23.566 CPU0: JIT: flushing data structures (compiled pages=233)
-Dec 13 07:52:23.601 CPU0: JIT: partial JIT flush (count=193)
-Dec 13 07:52:23.652 CPU0: JIT: flushing data structures (compiled pages=241)
-Dec 13 07:52:23.696 CPU0: JIT: partial JIT flush (count=204)
-Dec 13 07:52:23.744 CPU0: JIT: flushing data structures (compiled pages=238)
-Dec 13 07:52:23.776 CPU0: JIT: partial JIT flush (count=201)
-Dec 13 07:52:23.809 CPU0: JIT: flushing data structures (compiled pages=245)
-Dec 13 07:52:23.854 CPU0: JIT: partial JIT flush (count=191)
-Dec 13 07:52:23.888 CPU0: JIT: flushing data structures (compiled pages=250)
-Dec 13 07:52:23.934 CPU0: JIT: partial JIT flush (count=148)
-Dec 13 07:52:23.999 CPU0: JIT: flushing data structures (compiled pages=241)
-Dec 13 07:52:24.047 CPU0: JIT: partial JIT flush (count=188)
-Dec 13 07:52:24.188 CPU0: JIT: flushing data structures (compiled pages=243)
-Dec 13 07:52:24.228 CPU0: JIT: partial JIT flush (count=184)
-Dec 13 07:52:24.307 CPU0: JIT: flushing data structures (compiled pages=244)
-Dec 13 07:52:24.399 CPU0: JIT: partial JIT flush (count=192)
-Dec 13 07:52:24.445 CPU0: JIT: flushing data structures (compiled pages=246)
-Dec 13 07:52:24.470 ROM: unhandled syscall 0x0000001a at pc=0x608487b0 (a1=0x6649abfc,a2=0x0000001c,a3=0x64dee2f8)
-Dec 13 07:52:24.470 ROM: unhandled syscall 0x00000009 at pc=0x608487b0 (a1=0x6649abfc,a2=0x0000001c,a3=0x64dee2f8)
-Dec 13 07:52:24.494 CPU0: JIT: partial JIT flush (count=180)
-Dec 13 07:52:24.530 CPU0: JIT: flushing data structures (compiled pages=249)
-Dec 13 07:52:24.560 CPU0: JIT: partial JIT flush (count=190)
-Dec 13 07:52:24.582 CPU0: JIT: flushing data structures (compiled pages=239)
-Dec 13 07:52:24.609 CPU0: JIT: partial JIT flush (count=212)
-Dec 13 07:52:24.637 CPU0: JIT: flushing data structures (compiled pages=241)
-Dec 13 07:52:24.706 CPU0: JIT: partial JIT flush (count=196)
-Dec 13 07:52:24.740 CPU0: JIT: flushing data structures (compiled pages=245)
-Dec 13 07:52:24.770 CPU0: JIT: partial JIT flush (count=194)
-Dec 13 07:52:24.793 CPU0: JIT: flushing data structures (compiled pages=238)
-Dec 13 07:52:24.837 CPU0: JIT: partial JIT flush (count=180)
-Dec 13 07:52:24.866 CPU0: JIT: flushing data structures (compiled pages=240)
-Dec 13 07:52:24.894 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x08
-Dec 13 07:52:24.895 CPU0: JIT: partial JIT flush (count=200)
-Dec 13 07:52:24.919 C7200-IO-FE(0): unicast MAC address: ca:00:1e:e4:00:00
-Dec 13 07:52:24.919 CPU0: JIT: flushing data structures (compiled pages=237)
-Dec 13 07:52:24.950 CPU0: JIT: partial JIT flush (count=199)
-Dec 13 07:52:24.974 CPU0: JIT: flushing data structures (compiled pages=233)
-Dec 13 07:52:25.001 CPU0: JIT: partial JIT flush (count=200)
-Dec 13 07:52:25.026 CPU0: JIT: flushing data structures (compiled pages=236)
-Dec 13 07:52:25.042 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:25.042 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
-Dec 13 07:52:25.042 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x08
-Dec 13 07:52:25.042 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
-Dec 13 07:52:25.042 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
-Dec 13 07:52:25.053 CPU0: JIT: partial JIT flush (count=211)
-Dec 13 07:52:25.059 PA-FE-TX(1): unicast MAC address: ca:00:1e:e4:00:1c
-Dec 13 07:52:25.078 CPU0: JIT: flushing data structures (compiled pages=233)
-Dec 13 07:52:25.104 CPU0: JIT: partial JIT flush (count=210)
-Dec 13 07:52:25.133 CPU0: JIT: flushing data structures (compiled pages=240)
-Dec 13 07:52:25.178 CPU0: JIT: partial JIT flush (count=169)
-Dec 13 07:52:25.201 CPU0: JIT: flushing data structures (compiled pages=244)
-Dec 13 07:52:25.253 CPU0: JIT: partial JIT flush (count=180)
-Dec 13 07:52:25.277 CPU0: JIT: flushing data structures (compiled pages=238)
-Dec 13 07:52:25.307 CPU0: JIT: partial JIT flush (count=197)
-Dec 13 07:52:25.333 CPU0: JIT: flushing data structures (compiled pages=238)
-Dec 13 07:52:25.388 CPU0: JIT: partial JIT flush (count=187)
-Dec 13 07:52:25.395 ROM: trying to read bootvar 'RANDOM_NUM'
-Dec 13 07:52:25.502 CPU0: JIT: flushing data structures (compiled pages=247)
-Dec 13 07:52:25.533 CPU0: JIT: partial JIT flush (count=182)
-Dec 13 07:52:25.557 CPU0: JIT: flushing data structures (compiled pages=247)
-Dec 13 07:52:25.787 CPU0: JIT: partial JIT flush (count=171)
-Dec 13 07:52:25.852 CPU0: JIT: flushing data structures (compiled pages=243)
-Dec 13 07:52:25.855 ROM: trying to set bootvar 'BSI=0'
-Dec 13 07:52:25.856 ROM: trying to read bootvar 'RET_2_RCALTS'
-Dec 13 07:52:25.856 ROM: trying to set bootvar 'RET_2_RCALTS='
-Dec 13 07:52:26.562 CPU0: JIT: partial JIT flush (count=174)
-Dec 13 07:52:27.992 CPU0: JIT: flushing data structures (compiled pages=240)
-Dec 13 07:52:32.542 CPU0: JIT: partial JIT flush (count=170)
-Dec 13 07:52:43.845 CPU0: JIT: flushing data structures (compiled pages=241)
-Dec 13 07:52:44.639 CPU0: JIT: partial JIT flush (count=185)
-Dec 13 07:52:47.603 CPU0: JIT: flushing data structures (compiled pages=240)
-Dec 13 07:52:55.172 CPU0: JIT: partial JIT flush (count=164)
-Dec 13 07:52:55.402 ROM: trying to set bootvar 'RANDOM_NUM=1057213728'
-Dec 13 07:52:55.589 CPU0: JIT: flushing data structures (compiled pages=243)
-Dec 13 07:53:20.973 CPU0: JIT: partial JIT flush (count=153)
-Dec 13 07:53:24.612 CPU0: JIT: flushing data structures (compiled pages=242)
-Dec 13 07:53:29.616 CPU0: JIT: partial JIT flush (count=170)
-Dec 13 07:53:35.611 CPU0: JIT: flushing data structures (compiled pages=242)
-Dec 13 07:53:42.003 CPU0: JIT: partial JIT flush (count=164)
-Dec 13 07:53:42.023 CPU0: JIT: flushing data structures (compiled pages=239)
-Dec 13 07:53:42.052 CPU0: JIT: partial JIT flush (count=200)
-Dec 13 07:53:42.565 CPU0: JIT: flushing data structures (compiled pages=241)
-Dec 13 07:53:47.502 CPU0: JIT: partial JIT flush (count=170)
-Dec 13 07:53:48.325 CPU0: JIT: flushing data structures (compiled pages=241)
-Dec 13 07:53:48.352 CPU0: JIT: partial JIT flush (count=200)
-Dec 13 07:53:48.377 CPU0: JIT: flushing data structures (compiled pages=240)
-Dec 13 07:53:48.567 CPU0: JIT: partial JIT flush (count=197)
-Dec 13 07:54:02.373 CPU0: JIT: flushing data structures (compiled pages=247)
-Dec 13 07:54:02.510 CPU0: JIT: partial JIT flush (count=193)
-Dec 13 07:54:05.263 CPU0: JIT: flushing data structures (compiled pages=247)
-Dec 13 07:54:05.806 CPU0: JIT: partial JIT flush (count=180)
-Dec 13 07:54:09.757 CPU0: JIT: flushing data structures (compiled pages=247)
-Dec 13 07:54:18.089 CPU0: JIT: partial JIT flush (count=163)
-Dec 13 07:54:21.086 CPU0: JIT: flushing data structures (compiled pages=246)
-Dec 13 07:54:46.630 CPU0: JIT: partial JIT flush (count=145)
-Dec 13 07:54:50.118 CPU0: JIT: flushing data structures (compiled pages=248)
-Dec 13 07:54:52.531 CPU0: JIT: partial JIT flush (count=184)
-Dec 13 07:54:57.025 CPU0: JIT: flushing data structures (compiled pages=248)
-Dec 13 07:55:00.847 CPU0: JIT: partial JIT flush (count=180)
-Dec 13 07:55:02.511 CPU0: JIT: flushing data structures (compiled pages=248)
-Dec 13 07:55:06.678 CPU0: JIT: partial JIT flush (count=171)
-Dec 13 07:55:14.639 CPU0: JIT: flushing data structures (compiled pages=249)
-Dec 13 07:55:14.661 ROM: unhandled syscall 0x00000047 at pc=0x608487b0 (a1=0x00000001,a2=0x6095699c,a3=0x653edfc0)
-Dec 13 07:55:14.662 ROM: trying to read bootvar 'WARM_REBOOT'
-Dec 13 07:55:14.662 ROM: trying to set bootvar 'WARM_REBOOT=FALSE'
-Dec 13 07:55:14.674 CPU0: JIT: partial JIT flush (count=187)
-Dec 13 07:55:14.700 CPU0: JIT: flushing data structures (compiled pages=253)
-Dec 13 07:55:14.732 CPU0: JIT: partial JIT flush (count=202)
-Dec 13 07:55:14.753 CPU0: MP_FPGA: read from addr 0x0, pc=0x6093ceec
-Dec 13 07:55:14.760 CPU0: JIT: flushing data structures (compiled pages=261)
-Dec 13 07:55:14.789 CPU0: JIT: partial JIT flush (count=190)
-Dec 13 07:55:14.814 CPU0: JIT: flushing data structures (compiled pages=255)
-Dec 13 07:55:14.843 CPU0: JIT: partial JIT flush (count=202)
-Dec 13 07:55:14.871 CPU0: JIT: flushing data structures (compiled pages=256)
-Dec 13 07:55:14.899 CPU0: JIT: partial JIT flush (count=198)
-Dec 13 07:55:14.925 CPU0: JIT: flushing data structures (compiled pages=260)
-Dec 13 07:55:14.955 CPU0: JIT: partial JIT flush (count=198)
-Dec 13 07:55:14.981 CPU0: JIT: flushing data structures (compiled pages=261)
-Dec 13 07:55:15.009 CPU0: JIT: partial JIT flush (count=198)
-Dec 13 07:55:15.037 CPU0: JIT: flushing data structures (compiled pages=268)
-Dec 13 07:55:15.067 CPU0: JIT: partial JIT flush (count=195)
-Dec 13 07:55:15.094 CPU0: JIT: flushing data structures (compiled pages=259)
-Dec 13 07:55:15.127 CPU0: JIT: partial JIT flush (count=187)
-Dec 13 07:55:15.568 CPU0: JIT: flushing data structures (compiled pages=265)
-Dec 13 07:55:24.619 CPU0: JIT: partial JIT flush (count=171)
-Dec 13 07:56:20.964 CPU0: JIT: flushing data structures (compiled pages=266)
-Dec 13 07:57:20.923 CPU0: JIT: partial JIT flush (count=133)
-Dec 13 07:57:25.511 CPU0: JIT: flushing data structures (compiled pages=268)
-Dec 13 07:58:20.949 CPU0: JIT: partial JIT flush (count=133)
-Dec 13 07:59:20.918 CPU0: JIT: flushing data structures (compiled pages=272)
-Dec 13 07:59:25.613 CPU0: JIT: partial JIT flush (count=173)
-Dec 13 08:00:20.952 CPU0: JIT: flushing data structures (compiled pages=274)
-Dec 13 08:01:20.918 CPU0: JIT: partial JIT flush (count=133)
-Dec 13 08:01:25.185 CPU0: JIT: flushing data structures (compiled pages=275)
-Dec 13 08:02:20.971 CPU0: JIT: partial JIT flush (count=132)
-Dec 13 08:02:59.549 CPU0: JIT: flushing data structures (compiled pages=280)
-Dec 13 08:03:24.488 CPU0: JIT: partial JIT flush (count=153)
-Dec 13 08:04:20.936 CPU0: JIT: flushing data structures (compiled pages=280)
-Dec 13 08:04:28.775 CPU0: JIT: partial JIT flush (count=177)
-Dec 13 08:05:14.687 CPU0: JIT: flushing data structures (compiled pages=282)
-Dec 13 08:05:20.937 CPU0: JIT: partial JIT flush (count=176)
-Dec 13 08:06:20.952 CPU0: JIT: flushing data structures (compiled pages=283)
-Dec 13 08:06:25.689 CPU0: JIT: partial JIT flush (count=180)
-Dec 13 08:07:20.963 CPU0: JIT: flushing data structures (compiled pages=288)
-Dec 13 08:08:20.938 CPU0: JIT: partial JIT flush (count=131)
-Dec 13 08:08:27.556 CPU0: JIT: flushing data structures (compiled pages=290)
-Dec 13 08:09:20.995 CPU0: JIT: partial JIT flush (count=135)
-Dec 13 08:10:20.940 CPU0: JIT: flushing data structures (compiled pages=291)
-Dec 13 08:10:54.527 CPU0: JIT: partial JIT flush (count=150)
-Dec 13 08:11:24.470 CPU0: JIT: flushing data structures (compiled pages=296)
-Dec 13 08:12:20.936 CPU0: JIT: partial JIT flush (count=131)
-Dec 13 08:12:33.767 CPU0: JIT: flushing data structures (compiled pages=298)
-Dec 13 08:13:20.955 CPU0: JIT: partial JIT flush (count=142)
-Dec 13 08:14:20.947 CPU0: JIT: flushing data structures (compiled pages=298)
-Dec 13 08:14:27.555 CPU0: JIT: partial JIT flush (count=178)
-Dec 13 08:15:20.934 CPU0: JIT: flushing data structures (compiled pages=303)
-Dec 13 08:16:20.921 CPU0: JIT: partial JIT flush (count=130)
-Dec 13 08:16:33.755 CPU0: JIT: flushing data structures (compiled pages=305)
-Dec 13 08:17:20.934 CPU0: JIT: partial JIT flush (count=141)
-Dec 13 08:18:20.898 CPU0: JIT: flushing data structures (compiled pages=307)
-Dec 13 08:18:50.820 CPU0: JIT: partial JIT flush (count=154)
-Dec 13 08:19:20.905 CPU0: JIT: flushing data structures (compiled pages=310)
-Dec 13 08:20:20.898 CPU0: JIT: partial JIT flush (count=131)
-Dec 13 08:20:45.528 CPU0: JIT: flushing data structures (compiled pages=313)
-Dec 13 08:21:20.898 CPU0: JIT: partial JIT flush (count=144)
+Dec 13 13:42:48.829 disk0: C/H/S settings = 1024/4/32
+Dec 13 13:42:48.879 CONSOLE: console managed by I/O board
+Dec 13 13:42:49.190 C7200_BOOT: starting instance (CPU0 PC=0xffffffffbfc00000,idle_pc=0x6095ca40,JIT on)
+Dec 13 13:42:49.190 CPU0: CPU_STATE: Starting CPU (old state=2)...
+Dec 13 13:42:49.348 ROM: Microcode has started.
+Dec 13 13:42:56.634 ROM: trying to read bootvar 'WARM_REBOOT'
+Dec 13 13:42:56.663 ROM: unhandled syscall 0x00000032 at pc=0x608487b0 (a1=0x00000019,a2=0x64cb7930,a3=0x652b3288)
+Dec 13 13:42:56.663 CPU0: IO_FPGA: read from addr 0x224, pc=0x60925770 (size=1)
+Dec 13 13:42:56.759 ROM: trying to read bootvar 'RANDOM_NUM'
+Dec 13 13:42:56.773 CPU0: MP_FPGA: writing reg 0x70 at pc=0x6095ce24 (data=0x7e)
+Dec 13 13:42:56.773 CPU0: PCI: read request at pc=0x60943c1c: bus=0,device=0,function=0,reg=0x08
+Dec 13 13:42:56.773 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=0,function=0,reg=0x00
+Dec 13 13:42:56.773 CPU0: PCI: write request (data=0x0000011f) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x04
+Dec 13 13:42:56.773 CPU0: PCI: write request (data=0x00000000) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x10
+Dec 13 13:42:56.773 CPU0: PCI: write request (data=0x10000000) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x14
+Dec 13 13:42:56.773 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=0,function=0,reg=0x00
+Dec 13 13:42:56.773 CPU0: PCI: write request (data=0xc0000000) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x28
+Dec 13 13:42:56.773 CPU0: PCI: write request (data=0xd0000000) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x2c
+Dec 13 13:42:56.773 CPU0: PCI: write request (data=0x00000000) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x30
+Dec 13 13:42:56.773 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=0,function=0,reg=0x34
+Dec 13 13:42:56.773 CPU0: PCI: write request (data=0x00000001) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x34
+Dec 13 13:42:56.773 CPU0: PCI: write request (data=0x00000000) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x18
+Dec 13 13:42:56.773 CPU0: PCI: write request (data=0x00000000) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x1c
+Dec 13 13:42:56.774 CPU0: PCI: write request (data=0x000000ff) at pc=0x60943d5c: bus=0,device=0,function=0,reg=0x0c
+Dec 13 13:42:56.774 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=1,function=0,reg=0x00
+Dec 13 13:42:56.774 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=1,function=0,reg=0x40
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x00000143) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x04
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x00000010) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x0c
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:56.775 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0xffff9f40) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x1c
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x4af04880) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x20
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x4bf04b00) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x24
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x00030000) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x3c
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x00080000) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x40
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x00008020) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x44
+Dec 13 13:42:56.775 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=2,function=0,reg=0x00
+Dec 13 13:42:56.775 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=2,function=0,reg=0x40
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x00000144) at pc=0x60943d4c: bus=0,device=2,function=0,reg=0x04
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x0000ff00) at pc=0x60943d4c: bus=0,device=2,function=0,reg=0x0c
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x18090400) at pc=0x60943d4c: bus=0,device=2,function=0,reg=0x18
+Dec 13 13:42:56.775 PCI: PCI bridge 0,2,0 -> pri: 00, sec: 04, sub: 09
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0xffff9f40) at pc=0x60943d4c: bus=0,device=2,function=0,reg=0x1c
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x4af04880) at pc=0x60943d4c: bus=0,device=2,function=0,reg=0x20
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x4cf04b00) at pc=0x60943d4c: bus=0,device=2,function=0,reg=0x24
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x00030000) at pc=0x60943d4c: bus=0,device=2,function=0,reg=0x3c
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x00080000) at pc=0x60943d4c: bus=0,device=2,function=0,reg=0x40
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x00008020) at pc=0x60943d4c: bus=0,device=2,function=0,reg=0x44
+Dec 13 13:42:56.775 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=3,function=0,reg=0x00
+Dec 13 13:42:56.775 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=3,function=0,reg=0x40
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x00000143) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x04
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x00000010) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x0c
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x18000200) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x18
+Dec 13 13:42:56.775 PCI: PCI bridge 0,3,0 -> pri: 00, sec: 02, sub: 00
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0xffffffa0) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x1c
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x4f704d00) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x20
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x4cf04c00) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x24
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x00030000) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x3c
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x00080000) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x40
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x00008020) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x44
+Dec 13 13:42:56.775 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=4,function=0,reg=0x00
+Dec 13 13:42:56.775 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=4,function=0,reg=0x40
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x00000144) at pc=0x60943d4c: bus=0,device=4,function=0,reg=0x04
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x0000ff00) at pc=0x60943d4c: bus=0,device=4,function=0,reg=0x0c
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x180f0a00) at pc=0x60943d4c: bus=0,device=4,function=0,reg=0x18
+Dec 13 13:42:56.775 PCI: PCI bridge 0,4,0 -> pri: 00, sec: 10, sub: 15
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0xffffffa0) at pc=0x60943d4c: bus=0,device=4,function=0,reg=0x1c
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x4f704d00) at pc=0x60943d4c: bus=0,device=4,function=0,reg=0x20
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x4cf04b00) at pc=0x60943d4c: bus=0,device=4,function=0,reg=0x24
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x00030000) at pc=0x60943d4c: bus=0,device=4,function=0,reg=0x3c
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x00080000) at pc=0x60943d4c: bus=0,device=4,function=0,reg=0x40
+Dec 13 13:42:56.775 CPU0: PCI: write request (data=0x00008020) at pc=0x60943d4c: bus=0,device=4,function=0,reg=0x44
+Dec 13 13:42:56.780 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=5,function=0,reg=0x00
+Dec 13 13:42:56.780 CPU0: PCI: write request (data=0x000001c3) at pc=0x60943d4c: bus=0,device=5,function=0,reg=0x04
+Dec 13 13:42:56.780 CPU0: PCI: write request (data=0x00000400) at pc=0x60943d4c: bus=0,device=5,function=0,reg=0x10
+Dec 13 13:42:57.100 CPU0: JIT: partial JIT flush (count=176)
+Dec 13 13:42:57.134 CPU0: JIT: flushing data structures (compiled pages=231)
+Dec 13 13:42:57.170 CPU0: JIT: partial JIT flush (count=176)
+Dec 13 13:42:57.182 ROM: trying to read bootvar 'BOOT'
+Dec 13 13:42:57.182 ROM: trying to read bootvar 'CONFIG_FILE'
+Dec 13 13:42:57.182 ROM: trying to read bootvar 'BOOTLDR'
+Dec 13 13:42:57.182 ROM: trying to read bootvar 'RSHELF'
+Dec 13 13:42:57.182 ROM: trying to read bootvar 'DSHELF'
+Dec 13 13:42:57.182 ROM: trying to read bootvar 'DSHELFINFO'
+Dec 13 13:42:57.182 ROM: trying to read bootvar 'RESET_COUNTER'
+Dec 13 13:42:57.182 ROM: trying to read bootvar 'CHRG_LOCRECSN'
+Dec 13 13:42:57.182 ROM: trying to read bootvar 'CHRG_ID'
+Dec 13 13:42:57.182 ROM: trying to read bootvar 'SLOTCACHE'
+Dec 13 13:42:57.182 ROM: trying to read bootvar 'OVERTEMP'
+Dec 13 13:42:57.182 ROM: trying to read bootvar 'DIAG'
+Dec 13 13:42:57.182 ROM: trying to read bootvar 'WARM_REBOOT'
+Dec 13 13:42:57.211 CPU0: JIT: flushing data structures (compiled pages=236)
+Dec 13 13:42:57.228 ROM: unhandled syscall 0x0000007c at pc=0x608487b0 (a1=0x00000ff0,a2=0x00000000,a3=0x65381788)
+Dec 13 13:42:57.228 ROM: unhandled syscall 0x0000007c at pc=0x608487b0 (a1=0x6316dafd,a2=0x00000016,a3=0x650eea8c)
+Dec 13 13:42:57.229 CPU0: PCI: read request at pc=0x609821a4: bus=0,device=0,function=0,reg=0x08
+Dec 13 13:42:57.229 CPU0: CLPD6729: ext reg index 0x03 at pc=0x60987ec8
+Dec 13 13:42:57.229 CPU0: CLPD6729: ext reg index 0x03 at pc=0x60987ec8
+Dec 13 13:42:57.230 CPU0: CLPD6729: ext reg index 0x09 at pc=0x60987ec8
+Dec 13 13:42:57.230 CPU0: CLPD6729: ext reg index 0x09 at pc=0x60987ec8
+Dec 13 13:42:57.230 CPU0: CLPD6729: ext reg index 0x05 at pc=0x60987ec8
+Dec 13 13:42:57.230 CPU0: CLPD6729: ext reg index 0x05 at pc=0x60987ec8
+Dec 13 13:42:57.241 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.241 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Dec 13 13:42:57.242 CPU0: PCI: read request at pc=0x60943e40: bus=4,device=0,function=0,reg=0x00
+Dec 13 13:42:57.242 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.242 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.242 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.242 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Dec 13 13:42:57.242 CPU0: PCI: write request (data=0x00000142) at pc=0x60943d4c: bus=4,device=0,function=0,reg=0x04
+Dec 13 13:42:57.242 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.242 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.242 CPU0: PCI: write request (data=0x1800020a) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x18
+Dec 13 13:42:57.242 PCI: PCI bridge 0,3,0 -> pri: 10, sec: 02, sub: 00
+Dec 13 13:42:57.242 CPU0: PCI: read request at pc=0x60943e40: bus=10,device=0,function=0,reg=0x00
+Dec 13 13:42:57.242 CPU0: PCI: write request (data=0x18000200) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x18
+Dec 13 13:42:57.242 PCI: PCI bridge 0,3,0 -> pri: 00, sec: 02, sub: 00
+Dec 13 13:42:57.242 CPU0: PCI: write request (data=0x1800020a) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x18
+Dec 13 13:42:57.242 PCI: PCI bridge 0,3,0 -> pri: 10, sec: 02, sub: 00
+Dec 13 13:42:57.242 CPU0: PCI: write request (data=0x00000142) at pc=0x60943d4c: bus=10,device=0,function=0,reg=0x04
+Dec 13 13:42:57.242 CPU0: PCI: write request (data=0x18000200) at pc=0x60943d4c: bus=0,device=3,function=0,reg=0x18
+Dec 13 13:42:57.242 PCI: PCI bridge 0,3,0 -> pri: 00, sec: 02, sub: 00
+Dec 13 13:42:57.272 Calendar: reset
+Dec 13 13:42:57.278 CPU0: JIT: partial JIT flush (count=171)
+Dec 13 13:42:57.299 CPU0: JIT: flushing data structures (compiled pages=240)
+Dec 13 13:42:57.333 CPU0: JIT: partial JIT flush (count=196)
+Dec 13 13:42:57.349 ROM: trying to read bootvar 'BOOTLDR'
+Dec 13 13:42:57.349 ROM: trying to read bootvar 'CONFIG_FILE'
+Dec 13 13:42:57.427 CPU0: MP_FPGA: writing reg 0x70 at pc=0x609615d0 (data=0x2)
+Dec 13 13:42:57.495 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.495 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Dec 13 13:42:57.495 CPU0: PCI: read request at pc=0x60943e40: bus=4,device=1,function=0,reg=0x00
+Dec 13 13:42:57.495 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.495 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.495 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.495 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Dec 13 13:42:57.495 CPU0: PCI: read request at pc=0x60943e40: bus=4,device=1,function=0,reg=0x08
+Dec 13 13:42:57.495 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.495 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.495 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.495 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Dec 13 13:42:57.495 CPU0: PCI: read request at pc=0x60943e40: bus=4,device=1,function=0,reg=0x00
+Dec 13 13:42:57.495 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.495 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.496 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Dec 13 13:42:57.496 CPU0: PCI: read request at pc=0x60943e40: bus=4,device=1,function=0,reg=0x40
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.496 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.496 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0xffff0000) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x04
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.496 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.496 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x0000ff08) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x0c
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.496 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.496 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x18050504) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x18
+Dec 13 13:42:57.496 PCI: PCI bridge 4,1,0 -> pri: 04, sec: 05, sub: 05
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.496 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.496 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x02805f40) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x1c
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.496 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.496 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x48f04880) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x20
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.496 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.496 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x0001ff01) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x24
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.496 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.496 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x00000000) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x30
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.496 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.496 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x03030000) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x3c
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.496 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.496 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x02000000) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x40
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.496 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.496 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x00000000) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x64
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.496 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.496 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x000001ff) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x68
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.496 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.496 CPU0: PCI: write request (data=0x18000104) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.496 PCI: PCI bridge 0,1,0 -> pri: 04, sec: 01, sub: 00
+Dec 13 13:42:57.497 CPU0: PCI: write request (data=0x00000147) at pc=0x60943d4c: bus=4,device=1,function=0,reg=0x04
+Dec 13 13:42:57.497 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.497 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.551 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x00
+Dec 13 13:42:57.551 CPU0: PCI: write request (data=0x00000006) at pc=0x60943d4c: bus=0,device=6,function=0,reg=0x04
+Dec 13 13:42:57.551 CPU0: PCI: write request (data=0x480c0000) at pc=0x60943d4c: bus=0,device=6,function=0,reg=0x14
+Dec 13 13:42:57.551 C7200-IO-FE(0): registers are mapped at 0x480c0000
+Dec 13 13:42:57.551 CPU0: PCI: write request (data=0x0000ff00) at pc=0x60943d4c: bus=0,device=6,function=0,reg=0x0c
+Dec 13 13:42:57.555 CPU0: JIT: flushing data structures (compiled pages=239)
+Dec 13 13:42:57.564 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x08
+Dec 13 13:42:57.570 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.570 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:57.570 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x00
+Dec 13 13:42:57.570 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.570 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.570 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.570 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:57.570 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x00
+Dec 13 13:42:57.570 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.570 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.570 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.570 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:57.570 CPU0: PCI: write request (data=0x00000006) at pc=0x60943d4c: bus=5,device=0,function=0,reg=0x04
+Dec 13 13:42:57.570 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.570 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.570 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.570 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:57.570 CPU0: PCI: write request (data=0x48800000) at pc=0x60943d4c: bus=5,device=0,function=0,reg=0x14
+Dec 13 13:42:57.570 PA-FE-TX(1): registers are mapped at 0x48800000
+Dec 13 13:42:57.570 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.570 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.570 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.570 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:57.570 CPU0: PCI: write request (data=0x0000ff00) at pc=0x60943d4c: bus=5,device=0,function=0,reg=0x0c
+Dec 13 13:42:57.570 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.570 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.576 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.576 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:57.576 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x08
+Dec 13 13:42:57.576 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.576 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.577 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.577 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:57.577 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=1,function=0,reg=0x00
+Dec 13 13:42:57.577 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=1,function=0,reg=0x00).
+Dec 13 13:42:57.577 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.577 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.577 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.577 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:57.577 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=2,function=0,reg=0x00
+Dec 13 13:42:57.577 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=2,function=0,reg=0x00).
+Dec 13 13:42:57.577 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.577 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.577 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.577 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:57.577 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=3,function=0,reg=0x00
+Dec 13 13:42:57.577 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=3,function=0,reg=0x00).
+Dec 13 13:42:57.577 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.577 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.577 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.577 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:57.577 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=4,function=0,reg=0x00
+Dec 13 13:42:57.577 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=4,function=0,reg=0x00).
+Dec 13 13:42:57.577 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.577 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.577 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.577 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:57.577 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=5,function=0,reg=0x00
+Dec 13 13:42:57.577 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=5,function=0,reg=0x00).
+Dec 13 13:42:57.577 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.577 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.577 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.577 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:57.577 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=6,function=0,reg=0x00
+Dec 13 13:42:57.577 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=6,function=0,reg=0x00).
+Dec 13 13:42:57.577 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.577 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.577 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.577 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:57.577 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=7,function=0,reg=0x00
+Dec 13 13:42:57.577 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=7,function=0,reg=0x00).
+Dec 13 13:42:57.577 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.577 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.577 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.577 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:57.577 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=8,function=0,reg=0x00
+Dec 13 13:42:57.577 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=8,function=0,reg=0x00).
+Dec 13 13:42:57.577 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.577 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.577 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.577 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:57.577 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=9,function=0,reg=0x00
+Dec 13 13:42:57.577 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=9,function=0,reg=0x00).
+Dec 13 13:42:57.577 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.577 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.577 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.577 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:57.577 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=10,function=0,reg=0x00
+Dec 13 13:42:57.577 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=10,function=0,reg=0x00).
+Dec 13 13:42:57.577 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.577 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.577 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.577 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:57.577 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=11,function=0,reg=0x00
+Dec 13 13:42:57.577 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=11,function=0,reg=0x00).
+Dec 13 13:42:57.577 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.577 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.577 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.578 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:57.578 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=12,function=0,reg=0x00
+Dec 13 13:42:57.578 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=12,function=0,reg=0x00).
+Dec 13 13:42:57.578 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.578 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.578 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.578 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:57.578 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=13,function=0,reg=0x00
+Dec 13 13:42:57.578 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=13,function=0,reg=0x00).
+Dec 13 13:42:57.578 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.578 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.578 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.578 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:57.578 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=14,function=0,reg=0x00
+Dec 13 13:42:57.578 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=14,function=0,reg=0x00).
+Dec 13 13:42:57.578 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.578 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.578 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.578 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:57.578 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=15,function=0,reg=0x00
+Dec 13 13:42:57.578 CPU0: PCI: read request for unknown device at pc=0x60943e40 (bus=5,device=15,function=0,reg=0x00).
+Dec 13 13:42:57.578 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.578 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.584 PA-FE-TX(1): unicast MAC address: ca:00:ab:1c:00:1c
+Dec 13 13:42:57.584 C7200-IO-FE(0): unicast MAC address: ca:00:ab:1c:00:00
+Dec 13 13:42:57.587 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x08
+Dec 13 13:42:57.587 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.587 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:57.587 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x08
+Dec 13 13:42:57.587 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.587 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.591 CPU0: JIT: partial JIT flush (count=190)
+Dec 13 13:42:57.599 PA-FE-TX(1): unicast MAC address: ca:00:ab:1c:00:1c
+Dec 13 13:42:57.599 C7200-IO-FE(0): unicast MAC address: ca:00:ab:1c:00:00
+Dec 13 13:42:57.625 CPU0: JIT: flushing data structures (compiled pages=237)
+Dec 13 13:42:57.668 CPU0: JIT: partial JIT flush (count=190)
+Dec 13 13:42:57.699 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x08
+Dec 13 13:42:57.702 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.702 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:57.702 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x08
+Dec 13 13:42:57.702 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.702 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.703 CPU0: JIT: flushing data structures (compiled pages=242)
+Dec 13 13:42:57.710 PA-FE-TX(1): unicast MAC address: ca:00:ab:1c:00:1c
+Dec 13 13:42:57.710 C7200-IO-FE(0): unicast MAC address: ca:00:ab:1c:00:00
+Dec 13 13:42:57.746 CPU0: JIT: partial JIT flush (count=176)
+Dec 13 13:42:57.753 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x08
+Dec 13 13:42:57.758 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.758 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:57.759 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x08
+Dec 13 13:42:57.759 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.759 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.765 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x08
+Dec 13 13:42:57.765 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.765 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:57.765 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x08
+Dec 13 13:42:57.765 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.765 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.774 PA-FE-TX(1): unicast MAC address: ca:00:ab:1c:00:1c
+Dec 13 13:42:57.774 C7200-IO-FE(0): unicast MAC address: ca:00:ab:1c:00:00
+Dec 13 13:42:57.867 CPU0: JIT: flushing data structures (compiled pages=238)
+Dec 13 13:42:57.885 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x08
+Dec 13 13:42:57.890 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.890 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:57.890 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x08
+Dec 13 13:42:57.890 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.890 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.891 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x08
+Dec 13 13:42:57.892 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.892 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:57.892 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x08
+Dec 13 13:42:57.892 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:57.892 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:57.900 PA-FE-TX(1): unicast MAC address: ca:00:ab:1c:00:1c
+Dec 13 13:42:57.900 C7200-IO-FE(0): unicast MAC address: ca:00:ab:1c:00:00
+Dec 13 13:42:57.900 CPU0: JIT: partial JIT flush (count=198)
+Dec 13 13:42:57.929 CPU0: JIT: flushing data structures (compiled pages=235)
+Dec 13 13:42:57.966 CPU0: JIT: partial JIT flush (count=188)
+Dec 13 13:42:57.996 CPU0: JIT: flushing data structures (compiled pages=233)
+Dec 13 13:42:58.033 CPU0: JIT: partial JIT flush (count=193)
+Dec 13 13:42:58.085 CPU0: JIT: flushing data structures (compiled pages=241)
+Dec 13 13:42:58.127 CPU0: JIT: partial JIT flush (count=204)
+Dec 13 13:42:58.168 CPU0: JIT: flushing data structures (compiled pages=238)
+Dec 13 13:42:58.201 CPU0: JIT: partial JIT flush (count=201)
+Dec 13 13:42:58.237 CPU0: JIT: flushing data structures (compiled pages=245)
+Dec 13 13:42:58.283 CPU0: JIT: partial JIT flush (count=191)
+Dec 13 13:42:58.317 CPU0: JIT: flushing data structures (compiled pages=250)
+Dec 13 13:42:58.366 CPU0: JIT: partial JIT flush (count=148)
+Dec 13 13:42:58.445 CPU0: JIT: flushing data structures (compiled pages=241)
+Dec 13 13:42:58.496 CPU0: JIT: partial JIT flush (count=188)
+Dec 13 13:42:58.659 CPU0: JIT: flushing data structures (compiled pages=243)
+Dec 13 13:42:58.705 CPU0: JIT: partial JIT flush (count=184)
+Dec 13 13:42:58.791 CPU0: JIT: flushing data structures (compiled pages=245)
+Dec 13 13:42:58.883 CPU0: JIT: partial JIT flush (count=192)
+Dec 13 13:42:58.929 CPU0: JIT: flushing data structures (compiled pages=247)
+Dec 13 13:42:58.958 ROM: unhandled syscall 0x0000001a at pc=0x608487b0 (a1=0x6649abfc,a2=0x0000001c,a3=0x64dee2f8)
+Dec 13 13:42:58.958 ROM: unhandled syscall 0x00000009 at pc=0x608487b0 (a1=0x6649abfc,a2=0x0000001c,a3=0x64dee2f8)
+Dec 13 13:42:58.980 CPU0: JIT: partial JIT flush (count=180)
+Dec 13 13:42:59.014 CPU0: JIT: flushing data structures (compiled pages=250)
+Dec 13 13:42:59.046 CPU0: JIT: partial JIT flush (count=190)
+Dec 13 13:42:59.069 CPU0: JIT: flushing data structures (compiled pages=240)
+Dec 13 13:42:59.096 CPU0: JIT: partial JIT flush (count=212)
+Dec 13 13:42:59.125 CPU0: JIT: flushing data structures (compiled pages=242)
+Dec 13 13:42:59.195 CPU0: JIT: partial JIT flush (count=197)
+Dec 13 13:42:59.221 CPU0: JIT: flushing data structures (compiled pages=242)
+Dec 13 13:42:59.252 CPU0: JIT: partial JIT flush (count=194)
+Dec 13 13:42:59.284 CPU0: JIT: flushing data structures (compiled pages=245)
+Dec 13 13:42:59.320 CPU0: JIT: partial JIT flush (count=192)
+Dec 13 13:42:59.360 CPU0: JIT: flushing data structures (compiled pages=242)
+Dec 13 13:42:59.388 CPU0: JIT: partial JIT flush (count=213)
+Dec 13 13:42:59.416 CPU0: JIT: flushing data structures (compiled pages=238)
+Dec 13 13:42:59.445 CPU0: JIT: partial JIT flush (count=197)
+Dec 13 13:42:59.471 CPU0: JIT: flushing data structures (compiled pages=236)
+Dec 13 13:42:59.498 CPU0: JIT: partial JIT flush (count=213)
+Dec 13 13:42:59.527 CPU0: JIT: flushing data structures (compiled pages=243)
+Dec 13 13:42:59.558 CPU0: JIT: partial JIT flush (count=198)
+Dec 13 13:42:59.576 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x08
+Dec 13 13:42:59.586 CPU0: JIT: flushing data structures (compiled pages=244)
+Dec 13 13:42:59.593 C7200-IO-FE(0): unicast MAC address: ca:00:ab:1c:00:00
+Dec 13 13:42:59.614 CPU0: JIT: partial JIT flush (count=213)
+Dec 13 13:42:59.644 CPU0: JIT: flushing data structures (compiled pages=240)
+Dec 13 13:42:59.650 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x08
+Dec 13 13:42:59.671 C7200-IO-FE(0): unicast MAC address: ca:00:ab:1c:00:00
+Dec 13 13:42:59.675 CPU0: JIT: partial JIT flush (count=202)
+Dec 13 13:42:59.703 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:59.703 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:59.703 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x08
+Dec 13 13:42:59.703 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:59.703 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:59.704 CPU0: JIT: flushing data structures (compiled pages=244)
+Dec 13 13:42:59.718 PA-FE-TX(1): unicast MAC address: ca:00:ab:1c:00:1c
+Dec 13 13:42:59.734 CPU0: JIT: partial JIT flush (count=211)
+Dec 13 13:42:59.768 CPU0: JIT: flushing data structures (compiled pages=242)
+Dec 13 13:42:59.781 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:59.782 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:42:59.782 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x08
+Dec 13 13:42:59.782 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:42:59.782 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:42:59.796 PA-FE-TX(1): unicast MAC address: ca:00:ab:1c:00:1c
+Dec 13 13:42:59.799 CPU0: JIT: partial JIT flush (count=200)
+Dec 13 13:42:59.833 CPU0: JIT: flushing data structures (compiled pages=249)
+Dec 13 13:42:59.885 CPU0: JIT: partial JIT flush (count=172)
+Dec 13 13:42:59.911 CPU0: JIT: flushing data structures (compiled pages=252)
+Dec 13 13:42:59.967 CPU0: JIT: partial JIT flush (count=188)
+Dec 13 13:42:59.994 CPU0: JIT: flushing data structures (compiled pages=252)
+Dec 13 13:43:00.027 CPU0: JIT: partial JIT flush (count=196)
+Dec 13 13:43:00.062 CPU0: JIT: flushing data structures (compiled pages=249)
+Dec 13 13:43:00.118 ROM: trying to read bootvar 'RANDOM_NUM'
+Dec 13 13:43:00.122 CPU0: JIT: partial JIT flush (count=186)
+Dec 13 13:43:00.247 CPU0: JIT: flushing data structures (compiled pages=260)
+Dec 13 13:43:00.274 PA-FE-TX(1): unicast MAC address: ca:00:ab:1c:00:1c
+Dec 13 13:43:00.274 C7200-IO-FE(0): unicast MAC address: ca:00:ab:1c:00:00
+Dec 13 13:43:00.281 CPU0: JIT: partial JIT flush (count=191)
+Dec 13 13:43:00.310 CPU0: JIT: flushing data structures (compiled pages=260)
+Dec 13 13:43:00.529 CPU0: JIT: partial JIT flush (count=175)
+Dec 13 13:43:00.761 CPU0: JIT: flushing data structures (compiled pages=256)
+Dec 13 13:43:00.787 ROM: trying to set bootvar 'BSI=0'
+Dec 13 13:43:00.788 ROM: trying to read bootvar 'RET_2_RCALTS'
+Dec 13 13:43:00.788 ROM: trying to set bootvar 'RET_2_RCALTS='
+Dec 13 13:43:00.801 CPU0: JIT: partial JIT flush (count=203)
+Dec 13 13:43:01.337 CPU0: JIT: flushing data structures (compiled pages=259)
+Dec 13 13:43:04.693 CPU0: JIT: partial JIT flush (count=185)
+Dec 13 13:43:05.811 CPU0: JIT: flushing data structures (compiled pages=252)
+Dec 13 13:43:10.490 CPU0: JIT: partial JIT flush (count=178)
+Dec 13 13:43:14.383 CPU0: JIT: flushing data structures (compiled pages=259)
+Dec 13 13:43:17.618 CPU0: JIT: partial JIT flush (count=176)
+Dec 13 13:43:18.506 CPU0: JIT: flushing data structures (compiled pages=252)
+Dec 13 13:43:19.355 CPU0: JIT: partial JIT flush (count=184)
+Dec 13 13:43:24.227 CPU0: JIT: flushing data structures (compiled pages=252)
+Dec 13 13:43:25.104 CPU0: JIT: partial JIT flush (count=176)
+Dec 13 13:43:30.103 ROM: trying to set bootvar 'RANDOM_NUM=1226051485'
+Dec 13 13:43:30.105 CPU0: JIT: flushing data structures (compiled pages=256)
+Dec 13 13:43:49.095 CPU0: JIT: partial JIT flush (count=162)
+Dec 13 13:43:50.322 CPU0: JIT: flushing data structures (compiled pages=254)
+Dec 13 13:43:55.674 CPU0: JIT: partial JIT flush (count=177)
+Dec 13 13:43:56.875 CPU0: JIT: flushing data structures (compiled pages=252)
+Dec 13 13:43:57.271 CPU0: JIT: partial JIT flush (count=182)
+Dec 13 13:43:59.359 CPU0: JIT: flushing data structures (compiled pages=253)
+Dec 13 13:44:03.193 CPU0: JIT: partial JIT flush (count=172)
+Dec 13 13:44:03.216 CPU0: JIT: flushing data structures (compiled pages=255)
+Dec 13 13:44:03.231 CPU0: PCI: read request at pc=0x60943e40: bus=0,device=6,function=0,reg=0x08
+Dec 13 13:44:03.245 CPU0: JIT: partial JIT flush (count=215)
+Dec 13 13:44:03.254 C7200-IO-FE(0): unicast MAC address: ca:00:ab:1c:00:00
+Dec 13 13:44:03.254 C7200-IO-FE(0): unicast MAC address: ca:00:ab:1c:00:00
+Dec 13 13:44:03.271 CPU0: JIT: flushing data structures (compiled pages=253)
+Dec 13 13:44:03.297 CPU0: JIT: partial JIT flush (count=201)
+Dec 13 13:44:06.077 CPU0: JIT: flushing data structures (compiled pages=261)
+Dec 13 13:44:06.106 CPU0: JIT: partial JIT flush (count=199)
+Dec 13 13:44:08.060 CPU0: JIT: flushing data structures (compiled pages=261)
+Dec 13 13:44:11.014 CPU0: JIT: partial JIT flush (count=171)
+Dec 13 13:44:16.141 CPU0: JIT: flushing data structures (compiled pages=266)
+Dec 13 13:44:16.402 CPU0: JIT: partial JIT flush (count=192)
+Dec 13 13:44:16.407 CPU0: PCI: write request (data=0x18000105) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:44:16.407 PCI: PCI bridge 0,1,0 -> pri: 05, sec: 01, sub: 00
+Dec 13 13:44:16.407 CPU0: PCI: read request at pc=0x60943e40: bus=5,device=0,function=0,reg=0x08
+Dec 13 13:44:16.407 CPU0: PCI: write request (data=0x18000100) at pc=0x60943d4c: bus=0,device=1,function=0,reg=0x18
+Dec 13 13:44:16.407 PCI: PCI bridge 0,1,0 -> pri: 00, sec: 01, sub: 00
+Dec 13 13:44:16.419 PA-FE-TX(1): unicast MAC address: ca:00:ab:1c:00:1c
+Dec 13 13:44:16.419 PA-FE-TX(1): unicast MAC address: ca:00:ab:1c:00:1c
+Dec 13 13:44:16.428 CPU0: JIT: flushing data structures (compiled pages=261)
+Dec 13 13:44:16.455 CPU0: JIT: partial JIT flush (count=213)
+Dec 13 13:44:17.054 CPU0: JIT: flushing data structures (compiled pages=265)
+Dec 13 13:44:19.370 CPU0: JIT: partial JIT flush (count=179)
+Dec 13 13:44:20.335 CPU0: JIT: flushing data structures (compiled pages=269)
+Dec 13 13:44:21.118 CPU0: JIT: partial JIT flush (count=182)
+Dec 13 13:44:27.374 CPU0: JIT: flushing data structures (compiled pages=271)
+Dec 13 13:44:30.336 CPU0: JIT: partial JIT flush (count=178)
+Dec 13 13:44:44.211 CPU0: JIT: flushing data structures (compiled pages=271)
+Dec 13 13:44:44.231 ROM: unhandled syscall 0x00000047 at pc=0x608487b0 (a1=0x00000001,a2=0x6095699c,a3=0x653edfc0)
+Dec 13 13:44:44.233 ROM: trying to read bootvar 'WARM_REBOOT'
+Dec 13 13:44:44.244 CPU0: JIT: partial JIT flush (count=187)
+Dec 13 13:44:44.269 CPU0: JIT: flushing data structures (compiled pages=274)
+Dec 13 13:44:44.299 CPU0: JIT: partial JIT flush (count=202)
+Dec 13 13:44:44.319 CPU0: MP_FPGA: read from addr 0x0, pc=0x6093ceec
+Dec 13 13:44:44.326 CPU0: JIT: flushing data structures (compiled pages=283)
+Dec 13 13:44:44.356 CPU0: JIT: partial JIT flush (count=189)
+Dec 13 13:44:44.380 CPU0: JIT: flushing data structures (compiled pages=275)
+Dec 13 13:44:44.408 CPU0: JIT: partial JIT flush (count=198)
+Dec 13 13:44:44.435 CPU0: JIT: flushing data structures (compiled pages=280)
+Dec 13 13:44:44.464 CPU0: JIT: partial JIT flush (count=198)
+Dec 13 13:44:44.490 CPU0: JIT: flushing data structures (compiled pages=279)
+Dec 13 13:44:44.519 CPU0: JIT: partial JIT flush (count=198)
+Dec 13 13:44:44.545 CPU0: JIT: flushing data structures (compiled pages=281)
+Dec 13 13:44:44.572 CPU0: JIT: partial JIT flush (count=198)
+Dec 13 13:44:44.599 CPU0: JIT: flushing data structures (compiled pages=289)
+Dec 13 13:44:44.628 CPU0: JIT: partial JIT flush (count=195)
+Dec 13 13:44:44.655 CPU0: JIT: flushing data structures (compiled pages=280)
+Dec 13 13:44:44.689 CPU0: JIT: partial JIT flush (count=185)
+Dec 13 13:44:45.269 CPU0: JIT: flushing data structures (compiled pages=287)
+Dec 13 13:44:55.682 CPU0: JIT: partial JIT flush (count=169)
+Dec 13 13:45:00.288 CPU0: JIT: flushing data structures (compiled pages=286)
+Dec 13 13:45:08.056 CPU0: JIT: partial JIT flush (count=180)
+Dec 13 13:45:18.811 CPU0: JIT: flushing data structures (compiled pages=292)
+Dec 13 13:45:55.679 CPU0: JIT: partial JIT flush (count=141)
+Dec 13 13:45:58.991 CPU0: JIT: flushing data structures (compiled pages=288)
+Dec 13 13:46:02.342 CPU0: JIT: partial JIT flush (count=181)
+Dec 13 13:46:12.563 CPU0: JIT: flushing data structures (compiled pages=293)
+Dec 13 13:46:55.691 CPU0: JIT: partial JIT flush (count=139)
+Dec 13 13:46:59.038 CPU0: JIT: flushing data structures (compiled pages=289)
+Dec 13 13:47:02.347 CPU0: JIT: partial JIT flush (count=183)
+Dec 13 13:47:09.347 CPU0: JIT: flushing data structures (compiled pages=294)
+Dec 13 13:47:16.159 CPU0: JIT: partial JIT flush (count=184)
+Dec 13 13:47:55.668 CPU0: JIT: flushing data structures (compiled pages=290)
+Dec 13 13:47:59.113 CPU0: JIT: partial JIT flush (count=181)
+Dec 13 13:48:11.455 CPU0: JIT: flushing data structures (compiled pages=295)
+Dec 13 13:48:19.020 CPU0: JIT: partial JIT flush (count=182)
+Dec 13 13:48:55.677 CPU0: JIT: flushing data structures (compiled pages=292)
+Dec 13 13:48:59.702 CPU0: JIT: partial JIT flush (count=181)
+Dec 13 13:49:08.040 CPU0: JIT: flushing data structures (compiled pages=298)
+Dec 13 13:49:55.100 CPU0: JIT: partial JIT flush (count=140)
+Dec 13 13:49:58.016 CPU0: JIT: flushing data structures (compiled pages=294)
+Dec 13 13:50:02.352 CPU0: JIT: partial JIT flush (count=180)
+Dec 13 13:50:11.469 CPU0: JIT: flushing data structures (compiled pages=300)
+Dec 13 13:50:55.626 CPU0: JIT: partial JIT flush (count=143)
+Dec 13 13:50:58.985 CPU0: JIT: flushing data structures (compiled pages=297)
+Dec 13 13:51:02.356 CPU0: JIT: partial JIT flush (count=181)
+Dec 13 13:51:11.482 CPU0: JIT: flushing data structures (compiled pages=301)
+Dec 13 13:51:50.098 CPU0: JIT: partial JIT flush (count=146)
+Dec 13 13:51:56.138 CPU0: JIT: flushing data structures (compiled pages=297)
+Dec 13 13:52:00.714 CPU0: JIT: partial JIT flush (count=180)
+Dec 13 13:52:10.382 CPU0: JIT: flushing data structures (compiled pages=304)
+Dec 13 13:52:55.619 CPU0: JIT: partial JIT flush (count=143)
+Dec 13 13:52:58.214 CPU0: JIT: flushing data structures (compiled pages=299)
+Dec 13 13:53:02.320 CPU0: JIT: partial JIT flush (count=182)
+Dec 13 13:53:11.477 CPU0: JIT: flushing data structures (compiled pages=305)
+Dec 13 13:53:55.642 CPU0: JIT: partial JIT flush (count=143)
+Dec 13 13:53:58.976 CPU0: JIT: flushing data structures (compiled pages=302)
+Dec 13 13:54:02.333 CPU0: JIT: partial JIT flush (count=181)
+Dec 13 13:54:11.449 CPU0: JIT: flushing data structures (compiled pages=306)
+Dec 13 13:54:44.404 CPU0: JIT: partial JIT flush (count=151)
+Dec 13 13:54:46.121 CPU0: JIT: flushing data structures (compiled pages=301)
+Dec 13 13:54:55.685 CPU0: JIT: partial JIT flush (count=172)
+Dec 13 13:55:00.264 CPU0: JIT: flushing data structures (compiled pages=303)
+Dec 13 13:55:10.102 CPU0: JIT: partial JIT flush (count=177)
+Dec 13 13:55:51.205 CPU0: JIT: flushing data structures (compiled pages=308)
+Dec 13 13:55:56.621 CPU0: JIT: partial JIT flush (count=181)
+Dec 13 13:56:02.341 CPU0: JIT: flushing data structures (compiled pages=306)
+Dec 13 13:56:09.456 CPU0: JIT: partial JIT flush (count=181)
+Dec 13 13:56:11.445 CPU0: JIT: flushing data structures (compiled pages=307)
+Dec 13 13:56:16.110 CPU0: JIT: partial JIT flush (count=187)
+Dec 13 13:56:25.119 CPU0: JIT: flushing data structures (compiled pages=304)
+Dec 13 13:56:26.417 CPU0: JIT: partial JIT flush (count=179)
+Dec 13 13:56:30.138 CPU0: JIT: flushing data structures (compiled pages=304)
+Dec 13 13:56:37.328 CPU0: JIT: partial JIT flush (count=172)
+Dec 13 13:56:37.352 CPU0: JIT: flushing data structures (compiled pages=304)
+Dec 13 13:56:44.112 CPU0: JIT: partial JIT flush (count=174)
+Dec 13 13:56:54.679 CPU0: JIT: flushing data structures (compiled pages=309)
+Dec 13 13:56:55.637 CPU0: JIT: partial JIT flush (count=188)
+Dec 13 13:56:57.947 CPU0: JIT: flushing data structures (compiled pages=308)
+Dec 13 13:56:58.026 CPU0: JIT: partial JIT flush (count=193)
+Dec 13 13:57:00.960 CPU0: JIT: flushing data structures (compiled pages=313)
+Dec 13 13:57:02.325 CPU0: JIT: partial JIT flush (count=187)
+Dec 13 13:57:03.994 CPU0: JIT: flushing data structures (compiled pages=337)
+Dec 13 13:57:06.957 CPU0: JIT: partial JIT flush (count=189)
+Dec 13 13:57:10.465 CPU0: JIT: flushing data structures (compiled pages=351)
+Dec 13 13:57:12.990 CPU0: JIT: partial JIT flush (count=190)
+Dec 13 13:57:15.994 CPU0: JIT: flushing data structures (compiled pages=358)
+Dec 13 13:57:17.231 CPU0: JIT: partial JIT flush (count=194)
+Dec 13 13:57:20.225 CPU0: JIT: flushing data structures (compiled pages=373)
+Dec 13 13:57:24.974 CPU0: JIT: partial JIT flush (count=185)
+Dec 13 13:57:29.096 CPU0: JIT: flushing data structures (compiled pages=379)
+Dec 13 13:57:34.306 CPU0: JIT: partial JIT flush (count=160)
+Dec 13 13:57:34.351 CPU0: JIT: flushing data structures (compiled pages=380)
+Dec 13 13:57:36.096 CPU0: JIT: partial JIT flush (count=183)
+Dec 13 13:57:36.687 CPU0: JIT: flushing data structures (compiled pages=421)
+Dec 13 13:57:41.653 CPU0: JIT: partial JIT flush (count=166)
+Dec 13 13:57:48.014 CPU0: JIT: flushing data structures (compiled pages=421)
+Dec 13 13:57:50.303 CPU0: JIT: partial JIT flush (count=175)
+Dec 13 13:57:51.309 CPU0: JIT: flushing data structures (compiled pages=418)
+Dec 13 13:57:55.758 CPU0: JIT: partial JIT flush (count=174)
+Dec 13 13:57:58.733 CPU0: JIT: flushing data structures (compiled pages=418)
+Dec 13 13:57:58.967 CPU0: JIT: partial JIT flush (count=198)
+Dec 13 13:58:02.299 CPU0: JIT: flushing data structures (compiled pages=470)
+Dec 13 13:58:11.461 CPU0: JIT: partial JIT flush (count=172)
+Dec 13 13:58:40.895 CPU0: JIT: flushing data structures (compiled pages=476)
+Dec 13 13:58:55.669 CPU0: JIT: partial JIT flush (count=169)
+Dec 13 13:58:58.998 CPU0: JIT: flushing data structures (compiled pages=470)
+Dec 13 13:59:03.133 CPU0: JIT: partial JIT flush (count=180)
+Dec 13 13:59:19.022 CPU0: JIT: flushing data structures (compiled pages=478)
+Dec 13 13:59:55.647 CPU0: JIT: partial JIT flush (count=147)
+Dec 13 13:59:58.952 CPU0: JIT: flushing data structures (compiled pages=471)
+Dec 13 14:00:02.324 CPU0: JIT: partial JIT flush (count=179)
+Dec 13 14:00:11.457 CPU0: JIT: flushing data structures (compiled pages=478)
+Dec 13 14:00:45.523 CPU0: JIT: partial JIT flush (count=150)
+Dec 13 14:00:51.535 CPU0: JIT: flushing data structures (compiled pages=473)
+Dec 13 14:00:52.479 CPU0: JIT: partial JIT flush (count=170)
+Dec 13 14:00:56.106 CPU0: JIT: flushing data structures (compiled pages=474)
+Dec 13 14:00:59.014 CPU0: JIT: partial JIT flush (count=181)
+Dec 13 14:01:02.327 CPU0: JIT: flushing data structures (compiled pages=478)
+Dec 13 14:01:08.573 CPU0: JIT: partial JIT flush (count=179)
+Dec 13 14:01:09.509 CPU0: JIT: flushing data structures (compiled pages=478)
+Dec 13 14:01:16.096 CPU0: JIT: partial JIT flush (count=179)
+Dec 13 14:01:17.049 CPU0: JIT: flushing data structures (compiled pages=474)
+Dec 13 14:01:17.995 CPU0: JIT: partial JIT flush (count=181)
+Dec 13 14:01:19.024 CPU0: JIT: flushing data structures (compiled pages=477)
+Dec 13 14:01:29.110 CPU0: JIT: partial JIT flush (count=164)
+Dec 13 14:01:38.964 CPU0: JIT: flushing data structures (compiled pages=478)
+Dec 13 14:01:39.028 CPU0: JIT: partial JIT flush (count=201)
+Dec 13 14:01:40.937 CPU0: JIT: flushing data structures (compiled pages=474)
+Dec 13 14:01:41.694 CPU0: JIT: partial JIT flush (count=195)
+Dec 13 14:01:42.993 CPU0: JIT: flushing data structures (compiled pages=492)
+Dec 13 14:01:44.986 CPU0: JIT: partial JIT flush (count=184)
+Dec 13 14:01:55.635 CPU0: JIT: flushing data structures (compiled pages=498)
+Dec 13 14:01:58.961 CPU0: JIT: partial JIT flush (count=182)
+Dec 13 14:02:02.294 CPU0: JIT: flushing data structures (compiled pages=498)
+Dec 13 14:02:09.121 CPU0: JIT: partial JIT flush (count=169)
+Dec 13 14:02:17.991 CPU0: JIT: flushing data structures (compiled pages=504)
+Dec 13 14:02:30.419 CPU0: JIT: partial JIT flush (count=166)
+Dec 13 14:02:30.485 CPU0: JIT: flushing data structures (compiled pages=503)
+Dec 13 14:02:30.999 CPU0: JIT: partial JIT flush (count=193)
+Dec 13 14:02:55.626 CPU0: JIT: flushing data structures (compiled pages=551)
+Dec 13 14:02:58.935 CPU0: JIT: partial JIT flush (count=180)
+Dec 13 14:03:02.217 CPU0: JIT: flushing data structures (compiled pages=549)
+Dec 13 14:03:06.163 CPU0: JIT: partial JIT flush (count=176)
+Dec 13 14:03:06.213 CPU0: JIT: flushing data structures (compiled pages=554)
+Dec 13 14:03:07.015 CPU0: JIT: partial JIT flush (count=192)
+Dec 13 14:03:33.101 CPU0: JIT: flushing data structures (compiled pages=605)
+Dec 13 14:03:55.635 CPU0: JIT: partial JIT flush (count=157)
+Dec 13 14:03:58.943 CPU0: JIT: flushing data structures (compiled pages=599)
+Dec 13 14:04:02.316 CPU0: JIT: partial JIT flush (count=177)
+Dec 13 14:04:10.263 CPU0: JIT: flushing data structures (compiled pages=606)
+Dec 13 14:04:11.213 CPU0: JIT: partial JIT flush (count=183)
+Dec 13 14:04:16.107 CPU0: JIT: flushing data structures (compiled pages=608)
+Dec 13 14:04:20.241 CPU0: JIT: partial JIT flush (count=179)
+Dec 13 14:04:55.600 CPU0: JIT: flushing data structures (compiled pages=604)
+Dec 13 14:04:58.940 CPU0: JIT: partial JIT flush (count=180)
+Dec 13 14:05:02.277 CPU0: JIT: flushing data structures (compiled pages=604)
+Dec 13 14:05:11.468 CPU0: JIT: partial JIT flush (count=177)
+Dec 13 14:05:51.878 CPU0: JIT: flushing data structures (compiled pages=610)
+Dec 13 14:05:56.078 CPU0: JIT: partial JIT flush (count=183)
+Dec 13 14:05:59.191 CPU0: JIT: flushing data structures (compiled pages=604)
+Dec 13 14:06:09.104 CPU0: JIT: partial JIT flush (count=169)
+Dec 13 14:06:21.127 CPU0: JIT: flushing data structures (compiled pages=610)
+Dec 13 14:06:55.652 CPU0: JIT: partial JIT flush (count=146)
+Dec 13 14:06:58.945 CPU0: JIT: flushing data structures (compiled pages=605)
+Dec 13 14:07:02.238 CPU0: JIT: partial JIT flush (count=173)
+Dec 13 14:07:11.474 CPU0: JIT: flushing data structures (compiled pages=614)
+Dec 13 14:07:17.496 CPU0: JIT: partial JIT flush (count=180)
+Dec 13 14:07:22.211 CPU0: JIT: flushing data structures (compiled pages=608)
+Dec 13 14:07:26.056 CPU0: JIT: partial JIT flush (count=169)
+Dec 13 14:07:26.678 CPU0: JIT: flushing data structures (compiled pages=605)
+Dec 13 14:07:33.409 CPU0: JIT: partial JIT flush (count=163)
+Dec 13 14:07:34.094 CPU0: JIT: flushing data structures (compiled pages=611)
+Dec 13 14:07:37.955 CPU0: JIT: partial JIT flush (count=170)
+Dec 13 14:07:42.195 CPU0: JIT: flushing data structures (compiled pages=615)
+Dec 13 14:07:55.624 CPU0: JIT: partial JIT flush (count=170)
+Dec 13 14:07:58.975 CPU0: JIT: flushing data structures (compiled pages=616)
+Dec 13 14:08:03.078 CPU0: JIT: partial JIT flush (count=174)
+Dec 13 14:08:23.148 CPU0: JIT: flushing data structures (compiled pages=622)
+Dec 13 14:08:55.603 CPU0: JIT: partial JIT flush (count=150)
+Dec 13 14:08:58.906 CPU0: JIT: flushing data structures (compiled pages=616)
+Dec 13 14:09:02.266 CPU0: JIT: partial JIT flush (count=181)
+Dec 13 14:09:11.452 CPU0: JIT: flushing data structures (compiled pages=624)
+Dec 13 14:09:15.287 CPU0: JIT: partial JIT flush (count=173)
+Dec 13 14:09:16.280 CPU0: JIT: flushing data structures (compiled pages=618)
+Dec 13 14:09:36.559 CPU0: JIT: partial JIT flush (count=151)
+Dec 13 14:09:55.610 CPU0: JIT: flushing data structures (compiled pages=619)
+Dec 13 14:09:58.936 CPU0: JIT: partial JIT flush (count=180)
+Dec 13 14:10:02.272 CPU0: JIT: flushing data structures (compiled pages=619)
+Dec 13 14:10:11.469 CPU0: JIT: partial JIT flush (count=172)
+Dec 13 14:10:25.326 CPU0: JIT: flushing data structures (compiled pages=624)
+Dec 13 14:10:38.562 CPU0: JIT: partial JIT flush (count=162)
+Dec 13 14:10:39.561 CPU0: JIT: flushing data structures (compiled pages=623)
+Dec 13 14:10:47.549 CPU0: JIT: partial JIT flush (count=170)
+Dec 13 14:10:47.971 CPU0: JIT: flushing data structures (compiled pages=616)
+Dec 13 14:10:54.634 CPU0: JIT: partial JIT flush (count=178)
+Dec 13 14:10:55.637 CPU0: JIT: flushing data structures (compiled pages=623)
+Dec 13 14:10:57.340 CPU0: JIT: partial JIT flush (count=181)
+Dec 13 14:10:57.357 ROM: trying to read bootvar 'WARM_REBOOT'
+Dec 13 14:10:57.366 CPU0: JIT: flushing data structures (compiled pages=632)
+Dec 13 14:10:57.401 CPU0: JIT: partial JIT flush (count=195)
+Dec 13 14:10:57.428 CPU0: JIT: flushing data structures (compiled pages=632)
+Dec 13 14:10:57.447 CPU0: MP_FPGA: read from addr 0x0, pc=0x6093ceec
+Dec 13 14:10:57.458 CPU0: JIT: partial JIT flush (count=198)
+Dec 13 14:10:57.485 CPU0: JIT: flushing data structures (compiled pages=627)
+Dec 13 14:10:57.513 CPU0: JIT: partial JIT flush (count=194)
+Dec 13 14:10:57.540 CPU0: JIT: flushing data structures (compiled pages=640)
+Dec 13 14:10:57.570 CPU0: JIT: partial JIT flush (count=196)
+Dec 13 14:10:57.596 CPU0: JIT: flushing data structures (compiled pages=630)
+Dec 13 14:10:57.625 CPU0: JIT: partial JIT flush (count=202)
+Dec 13 14:10:57.651 CPU0: JIT: flushing data structures (compiled pages=634)
+Dec 13 14:10:57.679 CPU0: JIT: partial JIT flush (count=196)
+Dec 13 14:10:57.706 CPU0: JIT: flushing data structures (compiled pages=643)
+Dec 13 14:10:57.736 CPU0: JIT: partial JIT flush (count=195)
+Dec 13 14:10:57.763 CPU0: JIT: flushing data structures (compiled pages=633)
+Dec 13 14:10:57.793 CPU0: JIT: partial JIT flush (count=195)
+Dec 13 14:10:57.828 CPU0: JIT: flushing data structures (compiled pages=639)
+Dec 13 14:11:02.196 CPU0: JIT: partial JIT flush (count=175)
+Dec 13 14:11:11.485 CPU0: JIT: flushing data structures (compiled pages=644)
+Dec 13 14:11:19.719 CPU0: JIT: partial JIT flush (count=180)
+Dec 13 14:11:32.582 CPU0: JIT: flushing data structures (compiled pages=639)
+Dec 13 14:11:32.723 CPU0: JIT: partial JIT flush (count=199)
+Dec 13 14:11:32.974 CPU0: JIT: flushing data structures (compiled pages=691)
+Dec 13 14:11:49.410 CPU0: JIT: partial JIT flush (count=162)
+Dec 13 14:11:49.426 ROM: trying to read bootvar 'WARM_REBOOT'
+Dec 13 14:11:49.433 CPU0: JIT: flushing data structures (compiled pages=693)
+Dec 13 14:11:49.464 CPU0: JIT: partial JIT flush (count=196)
+Dec 13 14:11:49.491 CPU0: JIT: flushing data structures (compiled pages=698)
+Dec 13 14:11:49.514 CPU0: MP_FPGA: read from addr 0x0, pc=0x6093ceec
+Dec 13 14:11:49.521 CPU0: JIT: partial JIT flush (count=195)
+Dec 13 14:11:49.547 CPU0: JIT: flushing data structures (compiled pages=691)
+Dec 13 14:11:49.576 CPU0: JIT: partial JIT flush (count=196)
+Dec 13 14:11:49.603 CPU0: JIT: flushing data structures (compiled pages=701)
+Dec 13 14:11:49.636 CPU0: JIT: partial JIT flush (count=195)
+Dec 13 14:11:49.665 CPU0: JIT: flushing data structures (compiled pages=694)
+Dec 13 14:11:49.696 CPU0: JIT: partial JIT flush (count=205)
+Dec 13 14:11:49.723 CPU0: JIT: flushing data structures (compiled pages=697)
+Dec 13 14:11:49.752 CPU0: JIT: partial JIT flush (count=198)
+Dec 13 14:11:49.778 CPU0: JIT: flushing data structures (compiled pages=700)
+Dec 13 14:11:49.812 CPU0: JIT: partial JIT flush (count=199)
+Dec 13 14:11:49.842 CPU0: JIT: flushing data structures (compiled pages=703)
+Dec 13 14:11:49.875 CPU0: JIT: partial JIT flush (count=187)
+Dec 13 14:11:49.911 CPU0: JIT: flushing data structures (compiled pages=705)
+Dec 13 14:11:52.173 CPU0: JIT: partial JIT flush (count=174)
+Dec 13 14:11:56.047 CPU0: JIT: flushing data structures (compiled pages=701)
+Dec 13 14:11:59.771 CPU0: JIT: partial JIT flush (count=179)
+Dec 13 14:12:07.957 CPU0: JIT: flushing data structures (compiled pages=706)
+Dec 13 14:12:13.807 CPU0: JIT: partial JIT flush (count=171)
+Dec 13 14:12:13.872 CPU0: JIT: flushing data structures (compiled pages=704)
+Dec 13 14:12:15.891 CPU0: JIT: partial JIT flush (count=185)
+Dec 13 14:12:16.124 CPU0: JIT: flushing data structures (compiled pages=727)
+Dec 13 14:12:17.931 CPU0: JIT: partial JIT flush (count=191)
+Dec 13 14:12:19.319 CPU0: JIT: flushing data structures (compiled pages=734)
+Dec 13 14:12:37.605 CPU0: JIT: partial JIT flush (count=163)
+Dec 13 14:12:37.622 ROM: trying to read bootvar 'WARM_REBOOT'
+Dec 13 14:12:37.630 CPU0: JIT: flushing data structures (compiled pages=738)
+Dec 13 14:12:37.663 CPU0: JIT: partial JIT flush (count=195)
+Dec 13 14:12:37.689 CPU0: JIT: flushing data structures (compiled pages=743)
+Dec 13 14:12:37.709 CPU0: MP_FPGA: read from addr 0x0, pc=0x6093ceec
+Dec 13 14:12:37.720 CPU0: JIT: partial JIT flush (count=192)
+Dec 13 14:12:37.744 CPU0: JIT: flushing data structures (compiled pages=736)
+Dec 13 14:12:37.771 CPU0: JIT: partial JIT flush (count=196)
+Dec 13 14:12:37.798 CPU0: JIT: flushing data structures (compiled pages=746)
+Dec 13 14:12:37.827 CPU0: JIT: partial JIT flush (count=198)
+Dec 13 14:12:37.854 CPU0: JIT: flushing data structures (compiled pages=739)
+Dec 13 14:12:37.883 CPU0: JIT: partial JIT flush (count=202)
+Dec 13 14:12:37.910 CPU0: JIT: flushing data structures (compiled pages=742)
+Dec 13 14:12:37.938 CPU0: JIT: partial JIT flush (count=196)
+Dec 13 14:12:37.965 CPU0: JIT: flushing data structures (compiled pages=752)
+Dec 13 14:12:37.993 CPU0: JIT: partial JIT flush (count=191)
+Dec 13 14:12:38.019 CPU0: JIT: flushing data structures (compiled pages=747)
+Dec 13 14:12:38.049 CPU0: JIT: partial JIT flush (count=188)
+Dec 13 14:12:38.081 CPU0: JIT: flushing data structures (compiled pages=748)
+Dec 13 14:12:40.160 CPU0: JIT: partial JIT flush (count=174)
+Dec 13 14:12:55.589 CPU0: JIT: flushing data structures (compiled pages=747)
+Dec 13 14:12:58.895 CPU0: JIT: partial JIT flush (count=180)
+Dec 13 14:13:02.242 CPU0: JIT: flushing data structures (compiled pages=747)
+Dec 13 14:13:13.175 CPU0: JIT: partial JIT flush (count=176)
+Dec 13 14:13:55.594 CPU0: JIT: flushing data structures (compiled pages=749)
+Dec 13 14:13:58.929 CPU0: JIT: partial JIT flush (count=180)
+Dec 13 14:14:02.280 CPU0: JIT: flushing data structures (compiled pages=748)
+Dec 13 14:14:11.452 CPU0: JIT: partial JIT flush (count=172)
+Dec 13 14:14:30.244 CPU0: JIT: flushing data structures (compiled pages=754)
+Dec 13 14:14:55.646 CPU0: JIT: partial JIT flush (count=152)
+Dec 13 14:14:58.951 CPU0: JIT: flushing data structures (compiled pages=749)
+Dec 13 14:15:02.281 CPU0: JIT: partial JIT flush (count=181)
+Dec 13 14:15:11.484 CPU0: JIT: flushing data structures (compiled pages=756)
+Dec 13 14:15:32.910 CPU0: JIT: partial JIT flush (count=157)
+Dec 13 14:15:55.632 CPU0: JIT: flushing data structures (compiled pages=753)
+Dec 13 14:15:58.951 CPU0: JIT: partial JIT flush (count=180)
+Dec 13 14:16:03.303 CPU0: JIT: flushing data structures (compiled pages=754)
+Dec 13 14:16:30.273 CPU0: JIT: partial JIT flush (count=151)
+Dec 13 14:16:55.619 CPU0: JIT: flushing data structures (compiled pages=753)
+Dec 13 14:16:58.912 CPU0: JIT: partial JIT flush (count=180)
+Dec 13 14:17:02.251 CPU0: JIT: flushing data structures (compiled pages=753)
+Dec 13 14:17:11.482 CPU0: JIT: partial JIT flush (count=177)
+Dec 13 14:17:28.723 CPU0: JIT: flushing data structures (compiled pages=758)
+Dec 13 14:17:55.618 CPU0: JIT: partial JIT flush (count=152)
+Dec 13 14:17:58.908 CPU0: JIT: flushing data structures (compiled pages=754)
+Dec 13 14:18:02.250 CPU0: JIT: partial JIT flush (count=177)
+Dec 13 14:18:11.465 CPU0: JIT: flushing data structures (compiled pages=761)
+Dec 13 14:18:34.098 CPU0: JIT: partial JIT flush (count=156)
+Dec 13 14:18:55.600 CPU0: JIT: flushing data structures (compiled pages=758)
+Dec 13 14:18:58.916 CPU0: JIT: partial JIT flush (count=180)
+Dec 13 14:19:02.275 CPU0: JIT: flushing data structures (compiled pages=760)
+Dec 13 14:19:11.475 CPU0: JIT: partial JIT flush (count=178)
+Dec 13 14:19:34.083 CPU0: JIT: flushing data structures (compiled pages=761)
+Dec 13 14:19:55.593 CPU0: JIT: partial JIT flush (count=157)
+Dec 13 14:19:58.910 CPU0: JIT: flushing data structures (compiled pages=755)
+Dec 13 14:20:02.261 CPU0: JIT: partial JIT flush (count=179)
+Dec 13 14:20:11.466 CPU0: JIT: flushing data structures (compiled pages=763)
+Dec 13 14:20:35.075 CPU0: JIT: partial JIT flush (count=155)
+Dec 13 14:20:55.609 CPU0: JIT: flushing data structures (compiled pages=760)
+Dec 13 14:20:58.895 CPU0: JIT: partial JIT flush (count=180)
+Dec 13 14:21:02.247 CPU0: JIT: flushing data structures (compiled pages=759)
+Dec 13 14:21:11.455 CPU0: JIT: partial JIT flush (count=177)
+Dec 13 14:21:30.219 CPU0: JIT: flushing data structures (compiled pages=764)
+Dec 13 14:21:55.614 CPU0: JIT: partial JIT flush (count=155)
+Dec 13 14:21:58.922 CPU0: JIT: flushing data structures (compiled pages=761)
+Dec 13 14:22:02.263 CPU0: JIT: partial JIT flush (count=177)
+Dec 13 14:22:11.443 CPU0: JIT: flushing data structures (compiled pages=767)
+Dec 13 14:22:37.958 CPU0: JIT: partial JIT flush (count=154)
+Dec 13 14:22:42.233 CPU0: JIT: flushing data structures (compiled pages=762)
+Dec 13 14:22:55.827 CPU0: JIT: partial JIT flush (count=172)
+Dec 13 14:22:59.345 CPU0: JIT: flushing data structures (compiled pages=761)
+Dec 13 14:23:06.104 CPU0: JIT: partial JIT flush (count=180)
+Dec 13 14:23:28.264 CPU0: JIT: flushing data structures (compiled pages=767)
+Dec 13 14:23:55.716 CPU0: JIT: partial JIT flush (count=154)
+Dec 13 14:23:58.939 CPU0: JIT: flushing data structures (compiled pages=762)
+Dec 13 14:24:06.118 CPU0: JIT: partial JIT flush (count=177)
+Dec 13 14:50:14.371 CPU0: JIT: flushing data structures (compiled pages=768)
+Dec 13 14:50:36.883 CPU0: JIT: partial JIT flush (count=154)
+Dec 13 14:50:39.681 CPU0: JIT: flushing data structures (compiled pages=763)
+Dec 13 14:50:42.868 CPU0: JIT: partial JIT flush (count=182)
+Dec 13 14:50:52.295 CPU0: JIT: flushing data structures (compiled pages=771)
+Dec 13 14:51:35.227 CPU0: JIT: partial JIT flush (count=145)
+Dec 13 14:51:39.509 CPU0: JIT: flushing data structures (compiled pages=766)
+Dec 13 14:51:42.858 CPU0: JIT: partial JIT flush (count=178)
+Dec 13 14:51:54.634 CPU0: JIT: flushing data structures (compiled pages=772)
+Dec 13 14:52:36.217 CPU0: JIT: partial JIT flush (count=140)
+Dec 13 14:52:39.514 CPU0: JIT: flushing data structures (compiled pages=766)
+Dec 13 14:52:41.394 CPU0: JIT: partial JIT flush (count=186)
+Dec 13 14:52:52.296 CPU0: JIT: flushing data structures (compiled pages=775)
+Dec 13 14:53:23.700 CPU0: JIT: partial JIT flush (count=149)
+Dec 13 16:55:10.424 CPU0: JIT: flushing data structures (compiled pages=771)
+Dec 13 16:55:13.572 CPU0: JIT: partial JIT flush (count=182)
+Dec 13 16:55:16.705 CPU0: JIT: flushing data structures (compiled pages=773)
+Dec 13 16:55:25.180 CPU0: JIT: partial JIT flush (count=180)
+Dec 13 17:11:23.683 CPU0: JIT: flushing data structures (compiled pages=773)
+Dec 13 17:11:26.447 CPU0: JIT: partial JIT flush (count=187)
+Dec 13 17:11:29.493 CPU0: JIT: flushing data structures (compiled pages=772)
+Dec 13 17:11:37.578 CPU0: JIT: partial JIT flush (count=179)
+Dec 13 17:12:19.474 CPU0: JIT: flushing data structures (compiled pages=775)
+Dec 13 17:12:22.767 CPU0: JIT: partial JIT flush (count=183)
+Dec 13 17:12:26.134 CPU0: JIT: flushing data structures (compiled pages=773)
+Dec 13 17:12:35.396 CPU0: JIT: partial JIT flush (count=179)
+Dec 13 17:39:41.902 CPU0: JIT: flushing data structures (compiled pages=779)
+Dec 13 17:39:50.969 CPU0: JIT: partial JIT flush (count=175)
+Dec 13 17:39:54.016 CPU0: JIT: flushing data structures (compiled pages=772)
+Dec 13 17:39:57.198 CPU0: JIT: partial JIT flush (count=182)
+Dec 13 23:09:00.645 CPU0: JIT: flushing data structures (compiled pages=780)
+Dec 13 23:09:17.956 CPU0: JIT: partial JIT flush (count=165)
+Dec 13 23:09:21.259 CPU0: JIT: flushing data structures (compiled pages=775)
+Dec 13 23:09:24.612 CPU0: JIT: partial JIT flush (count=178)
+Dec 13 23:09:33.667 CPU0: JIT: flushing data structures (compiled pages=782)
+Dec 13 23:10:09.427 CPU0: JIT: partial JIT flush (count=146)
+Dec 13 23:10:18.395 CPU0: JIT: flushing data structures (compiled pages=779)
+Dec 13 23:10:21.411 CPU0: JIT: partial JIT flush (count=182)
+Dec 13 23:10:24.962 CPU0: JIT: flushing data structures (compiled pages=784)
+Dec 13 23:11:11.425 CPU0: JIT: partial JIT flush (count=141)
+Dec 13 23:11:18.398 CPU0: JIT: flushing data structures (compiled pages=781)
+Dec 13 23:11:22.521 CPU0: JIT: partial JIT flush (count=179)
+Dec 13 23:11:30.304 CPU0: JIT: flushing data structures (compiled pages=785)
+Dec 13 23:12:12.457 CPU0: JIT: partial JIT flush (count=144)
+Dec 13 23:12:18.400 CPU0: JIT: flushing data structures (compiled pages=783)
+Dec 13 23:12:22.509 CPU0: JIT: partial JIT flush (count=179)
+Dec 13 23:12:26.655 CPU0: JIT: flushing data structures (compiled pages=788)
+Dec 13 23:13:13.432 CPU0: JIT: partial JIT flush (count=142)
+Dec 13 23:13:18.399 CPU0: JIT: flushing data structures (compiled pages=785)
+Dec 13 23:13:22.504 CPU0: JIT: partial JIT flush (count=178)
+Dec 13 23:13:30.304 CPU0: JIT: flushing data structures (compiled pages=789)
+Dec 13 23:14:14.419 CPU0: JIT: partial JIT flush (count=144)
+Dec 13 23:14:18.409 CPU0: JIT: flushing data structures (compiled pages=787)
+Dec 13 23:14:22.501 CPU0: JIT: partial JIT flush (count=178)
+Dec 13 23:14:26.621 CPU0: JIT: flushing data structures (compiled pages=792)
+Dec 13 23:15:14.416 CPU0: JIT: partial JIT flush (count=141)
+Dec 13 23:15:18.421 CPU0: JIT: flushing data structures (compiled pages=789)
+Dec 13 23:15:21.263 CPU0: JIT: partial JIT flush (count=188)
+Dec 13 23:15:24.952 CPU0: JIT: flushing data structures (compiled pages=790)
+Dec 13 23:16:15.406 CPU0: JIT: partial JIT flush (count=136)
+Dec 13 23:16:19.499 CPU0: JIT: flushing data structures (compiled pages=790)
+Dec 13 23:16:24.570 CPU0: JIT: partial JIT flush (count=176)
+Dec 13 23:16:33.283 CPU0: JIT: flushing data structures (compiled pages=796)
+Dec 13 23:17:17.433 CPU0: JIT: partial JIT flush (count=145)
+Dec 13 23:17:20.295 CPU0: JIT: flushing data structures (compiled pages=791)
+Dec 13 23:17:24.610 CPU0: JIT: partial JIT flush (count=177)
+Dec 13 23:17:33.302 CPU0: JIT: flushing data structures (compiled pages=797)
+Dec 13 23:18:11.877 CPU0: JIT: partial JIT flush (count=147)
+Dec 13 23:18:18.396 CPU0: JIT: flushing data structures (compiled pages=794)
+Dec 13 23:18:22.095 CPU0: JIT: partial JIT flush (count=180)
+Dec 13 23:18:24.963 CPU0: JIT: flushing data structures (compiled pages=799)
+Dec 13 23:19:07.888 CPU0: JIT: partial JIT flush (count=143)
+Dec 13 23:19:17.951 CPU0: JIT: flushing data structures (compiled pages=796)
+Dec 13 23:19:21.240 CPU0: JIT: partial JIT flush (count=181)
+Dec 13 23:19:24.583 CPU0: JIT: flushing data structures (compiled pages=795)
+Dec 13 23:19:35.619 CPU0: JIT: partial JIT flush (count=177)
+Dec 13 23:20:17.898 CPU0: JIT: flushing data structures (compiled pages=800)
+Dec 13 23:20:21.236 CPU0: JIT: partial JIT flush (count=182)
+Dec 13 23:20:23.008 CPU0: JIT: flushing data structures (compiled pages=797)
+Dec 13 23:20:24.619 CPU0: JIT: partial JIT flush (count=156)
+Dec 13 23:20:27.506 CPU0: JIT: flushing data structures (compiled pages=803)
+Dec 13 23:21:17.931 CPU0: JIT: partial JIT flush (count=145)
+Dec 13 23:21:21.246 CPU0: JIT: flushing data structures (compiled pages=799)
+Dec 13 23:21:24.593 CPU0: JIT: partial JIT flush (count=178)
+Dec 13 23:21:33.723 CPU0: JIT: flushing data structures (compiled pages=805)
+Dec 13 23:22:17.902 CPU0: JIT: partial JIT flush (count=144)
+Dec 13 23:22:21.227 CPU0: JIT: flushing data structures (compiled pages=800)
+Dec 13 23:22:24.568 CPU0: JIT: partial JIT flush (count=178)
+Dec 13 23:22:33.679 CPU0: JIT: flushing data structures (compiled pages=807)
+Dec 13 23:23:17.916 CPU0: JIT: partial JIT flush (count=144)
+Dec 13 23:23:21.230 CPU0: JIT: flushing data structures (compiled pages=802)
+Dec 13 23:23:24.607 CPU0: JIT: partial JIT flush (count=178)
+Dec 13 23:23:36.369 CPU0: JIT: flushing data structures (compiled pages=809)
+Dec 13 23:24:17.919 CPU0: JIT: partial JIT flush (count=140)
+Dec 13 23:24:21.220 CPU0: JIT: flushing data structures (compiled pages=803)
+Dec 13 23:24:24.558 CPU0: JIT: partial JIT flush (count=179)
+Dec 13 23:24:34.407 CPU0: JIT: flushing data structures (compiled pages=811)
+Dec 13 23:25:17.928 CPU0: JIT: partial JIT flush (count=141)
+Dec 13 23:25:21.210 CPU0: JIT: flushing data structures (compiled pages=805)
+Dec 13 23:25:24.575 CPU0: JIT: partial JIT flush (count=178)
+Dec 13 23:25:30.259 CPU0: JIT: flushing data structures (compiled pages=815)
+Dec 13 23:26:17.880 CPU0: JIT: partial JIT flush (count=143)
+Dec 13 23:26:21.234 CPU0: JIT: flushing data structures (compiled pages=808)
+Dec 13 23:26:24.569 CPU0: JIT: partial JIT flush (count=179)
+Dec 13 23:26:31.371 CPU0: JIT: flushing data structures (compiled pages=815)
+Dec 13 23:27:16.946 CPU0: JIT: partial JIT flush (count=145)
+Dec 13 23:27:20.305 CPU0: JIT: flushing data structures (compiled pages=811)
+Dec 13 23:27:24.570 CPU0: JIT: partial JIT flush (count=177)
+Dec 13 23:27:30.279 CPU0: JIT: flushing data structures (compiled pages=818)
+Dec 13 23:28:17.888 CPU0: JIT: partial JIT flush (count=143)
+Dec 13 23:28:21.251 CPU0: JIT: flushing data structures (compiled pages=812)
+Dec 13 23:28:24.571 CPU0: JIT: partial JIT flush (count=178)
+Dec 13 23:28:31.373 CPU0: JIT: flushing data structures (compiled pages=819)
+Dec 13 23:29:17.901 CPU0: JIT: partial JIT flush (count=143)
+Dec 13 23:29:21.202 CPU0: JIT: flushing data structures (compiled pages=814)
+Dec 13 23:29:24.573 CPU0: JIT: partial JIT flush (count=177)
+Dec 13 23:29:31.403 CPU0: JIT: flushing data structures (compiled pages=822)
+Dec 13 23:30:17.873 CPU0: JIT: partial JIT flush (count=144)
+Dec 13 23:30:21.229 CPU0: JIT: flushing data structures (compiled pages=817)
+Dec 13 23:30:24.578 CPU0: JIT: partial JIT flush (count=179)
+Dec 13 23:30:30.477 CPU0: JIT: flushing data structures (compiled pages=824)
+Dec 13 23:31:17.888 CPU0: JIT: partial JIT flush (count=143)
+Dec 13 23:31:21.219 CPU0: JIT: flushing data structures (compiled pages=818)
+Dec 13 23:31:24.607 CPU0: JIT: partial JIT flush (count=178)
+Dec 13 23:31:31.372 CPU0: JIT: flushing data structures (compiled pages=825)
+Dec 13 23:32:02.336 CPU0: JIT: partial JIT flush (count=157)
+Dec 13 23:32:17.908 CPU0: JIT: flushing data structures (compiled pages=822)
+Dec 13 23:32:21.292 CPU0: JIT: partial JIT flush (count=180)
+Dec 13 23:32:24.583 CPU0: JIT: flushing data structures (compiled pages=825)
+Dec 13 23:32:31.975 CPU0: JIT: partial JIT flush (count=182)
+Dec 13 23:33:10.338 CPU0: JIT: flushing data structures (compiled pages=826)
+Dec 13 23:33:18.400 CPU0: JIT: partial JIT flush (count=179)
+Dec 13 23:33:22.534 CPU0: JIT: flushing data structures (compiled pages=821)
+Dec 13 23:33:28.394 CPU0: JIT: partial JIT flush (count=181)
+Dec 13 23:33:52.559 CPU0: JIT: flushing data structures (compiled pages=828)
+Dec 13 23:34:17.900 CPU0: JIT: partial JIT flush (count=149)
+Dec 13 23:34:21.242 CPU0: JIT: flushing data structures (compiled pages=820)
+Dec 13 23:34:24.588 CPU0: JIT: partial JIT flush (count=182)
+Dec 13 23:34:33.529 CPU0: JIT: flushing data structures (compiled pages=829)
+Dec 13 23:35:15.545 CPU0: JIT: partial JIT flush (count=144)
+Dec 13 23:35:19.484 CPU0: JIT: flushing data structures (compiled pages=826)
+Dec 13 23:35:24.555 CPU0: JIT: partial JIT flush (count=176)
+Dec 13 23:35:33.583 CPU0: JIT: flushing data structures (compiled pages=832)
+Dec 13 23:36:17.895 CPU0: JIT: partial JIT flush (count=149)
+Dec 13 23:36:21.207 CPU0: JIT: flushing data structures (compiled pages=826)
+Dec 13 23:36:24.604 CPU0: JIT: partial JIT flush (count=180)
+Dec 13 23:36:33.621 CPU0: JIT: flushing data structures (compiled pages=833)
+Dec 13 23:36:54.883 CPU0: JIT: partial JIT flush (count=164)
+Dec 13 23:37:17.964 CPU0: JIT: flushing data structures (compiled pages=830)
+Dec 13 23:37:21.236 CPU0: JIT: partial JIT flush (count=181)
+Dec 13 23:37:24.909 CPU0: JIT: flushing data structures (compiled pages=832)
+Dec 13 23:38:16.961 CPU0: JIT: partial JIT flush (count=141)
+Dec 13 23:38:21.207 CPU0: JIT: flushing data structures (compiled pages=831)
+Dec 13 23:38:24.591 CPU0: JIT: partial JIT flush (count=174)
+Dec 13 23:38:31.353 CPU0: JIT: flushing data structures (compiled pages=837)
+Dec 13 23:39:16.981 CPU0: JIT: partial JIT flush (count=149)
+Dec 13 23:39:21.240 CPU0: JIT: flushing data structures (compiled pages=833)
+Dec 13 23:39:24.580 CPU0: JIT: partial JIT flush (count=174)
+Dec 13 23:39:31.385 CPU0: JIT: flushing data structures (compiled pages=839)
+Dec 13 23:40:16.947 CPU0: JIT: partial JIT flush (count=149)
+Dec 13 23:40:20.295 CPU0: JIT: flushing data structures (compiled pages=835)
+Dec 13 23:40:24.494 CPU0: JIT: partial JIT flush (count=179)
+Dec 13 23:40:33.601 CPU0: JIT: flushing data structures (compiled pages=841)
+Dec 13 23:41:16.941 CPU0: JIT: partial JIT flush (count=149)
+Dec 13 23:41:21.217 CPU0: JIT: flushing data structures (compiled pages=837)
+Dec 13 23:41:24.579 CPU0: JIT: partial JIT flush (count=174)
+Dec 13 23:41:31.392 CPU0: JIT: flushing data structures (compiled pages=843)
+Dec 13 23:42:16.956 CPU0: JIT: partial JIT flush (count=149)
+Dec 13 23:42:21.227 CPU0: JIT: flushing data structures (compiled pages=839)
+Dec 13 23:42:24.585 CPU0: JIT: partial JIT flush (count=180)
+Dec 13 23:42:31.658 CPU0: JIT: flushing data structures (compiled pages=845)
+Dec 13 23:42:52.298 CPU0: JIT: partial JIT flush (count=165)
+Dec 13 23:43:17.920 CPU0: JIT: flushing data structures (compiled pages=842)
+Dec 13 23:43:21.242 CPU0: JIT: partial JIT flush (count=181)
+Dec 13 23:43:24.937 CPU0: JIT: flushing data structures (compiled pages=843)
+Dec 13 23:43:52.182 CPU0: JIT: partial JIT flush (count=152)
+Dec 13 23:44:17.935 CPU0: JIT: flushing data structures (compiled pages=843)
+Dec 13 23:44:21.241 CPU0: JIT: partial JIT flush (count=181)
+Dec 13 23:44:24.582 CPU0: JIT: flushing data structures (compiled pages=847)
+Dec 13 23:44:33.699 CPU0: JIT: partial JIT flush (count=179)
+Dec 13 23:44:56.039 CPU0: JIT: flushing data structures (compiled pages=848)
+Dec 13 23:45:17.921 CPU0: JIT: partial JIT flush (count=160)
+Dec 13 23:45:21.219 CPU0: JIT: flushing data structures (compiled pages=843)
+Dec 13 23:45:24.563 CPU0: JIT: partial JIT flush (count=175)
+Dec 13 23:45:33.684 CPU0: JIT: flushing data structures (compiled pages=850)
+Dec 13 23:46:17.882 CPU0: JIT: partial JIT flush (count=149)
+Dec 13 23:46:21.228 CPU0: JIT: flushing data structures (compiled pages=846)
+Dec 13 23:46:24.579 CPU0: JIT: partial JIT flush (count=175)
+Dec 13 23:46:33.713 CPU0: JIT: flushing data structures (compiled pages=852)
+Dec 13 23:46:40.087 CPU0: JIT: partial JIT flush (count=185)
+Dec 13 23:46:40.703 CPU0: JIT: flushing data structures (compiled pages=901)
+Dec 13 23:47:17.898 CPU0: JIT: partial JIT flush (count=147)
+Dec 13 23:47:21.222 CPU0: JIT: flushing data structures (compiled pages=895)
+Dec 13 23:47:24.573 CPU0: JIT: partial JIT flush (count=180)
+Dec 13 23:47:31.369 CPU0: JIT: flushing data structures (compiled pages=904)
+Dec 13 23:48:17.893 CPU0: JIT: partial JIT flush (count=148)
+Dec 13 23:48:21.198 CPU0: JIT: flushing data structures (compiled pages=900)
+Dec 13 23:48:24.565 CPU0: JIT: partial JIT flush (count=175)
+Dec 13 23:48:33.661 CPU0: JIT: flushing data structures (compiled pages=906)
+Dec 13 23:49:17.871 CPU0: JIT: partial JIT flush (count=149)
+Dec 13 23:49:21.222 CPU0: JIT: flushing data structures (compiled pages=902)
+Dec 13 23:49:24.569 CPU0: JIT: partial JIT flush (count=180)
+Dec 13 23:49:31.355 CPU0: JIT: flushing data structures (compiled pages=909)
+Dec 13 23:50:17.884 CPU0: JIT: partial JIT flush (count=148)
+Dec 13 23:50:21.240 CPU0: JIT: flushing data structures (compiled pages=904)
+Dec 13 23:50:24.565 CPU0: JIT: partial JIT flush (count=180)
+Dec 13 23:50:33.773 CPU0: JIT: flushing data structures (compiled pages=911)
+Dec 13 23:51:17.885 CPU0: JIT: partial JIT flush (count=150)
+Dec 13 23:51:21.213 CPU0: JIT: flushing data structures (compiled pages=906)
+Dec 13 23:51:24.568 CPU0: JIT: partial JIT flush (count=174)
+Dec 13 23:51:33.673 CPU0: JIT: flushing data structures (compiled pages=912)
+Dec 13 23:52:17.901 CPU0: JIT: partial JIT flush (count=149)
+Dec 13 23:52:21.219 CPU0: JIT: flushing data structures (compiled pages=908)
+Dec 13 23:52:24.573 CPU0: JIT: partial JIT flush (count=180)
+Dec 13 23:52:31.798 CPU0: JIT: flushing data structures (compiled pages=914)
+Dec 13 23:53:00.697 CPU0: JIT: partial JIT flush (count=156)
+Dec 13 23:53:17.903 CPU0: JIT: flushing data structures (compiled pages=911)
+Dec 13 23:53:21.201 CPU0: JIT: partial JIT flush (count=181)
+Dec 13 23:53:24.567 CPU0: JIT: flushing data structures (compiled pages=912)
+Dec 13 23:53:32.800 CPU0: JIT: partial JIT flush (count=177)
+Dec 13 23:53:52.545 CPU0: JIT: flushing data structures (compiled pages=914)
+Dec 13 23:54:17.893 CPU0: JIT: partial JIT flush (count=154)
+Dec 13 23:54:21.221 CPU0: JIT: flushing data structures (compiled pages=908)
+Dec 13 23:54:24.569 CPU0: JIT: partial JIT flush (count=177)
+Dec 13 23:54:31.362 CPU0: JIT: flushing data structures (compiled pages=916)
+Dec 13 23:54:54.813 CPU0: JIT: partial JIT flush (count=164)
+Dec 13 23:55:17.898 CPU0: JIT: flushing data structures (compiled pages=913)
+Dec 13 23:55:21.253 CPU0: JIT: partial JIT flush (count=181)
+Dec 13 23:55:24.562 CPU0: JIT: flushing data structures (compiled pages=914)
+Dec 13 23:55:31.349 CPU0: JIT: partial JIT flush (count=177)
+Dec 13 23:56:16.957 CPU0: JIT: flushing data structures (compiled pages=918)
+Dec 13 23:56:21.266 CPU0: JIT: partial JIT flush (count=181)
+Dec 13 23:56:24.573 CPU0: JIT: flushing data structures (compiled pages=913)
+Dec 13 23:56:33.632 CPU0: JIT: partial JIT flush (count=175)
+Dec 13 23:57:13.308 CPU0: JIT: flushing data structures (compiled pages=919)
+Dec 13 23:57:18.629 CPU0: JIT: partial JIT flush (count=180)
+Dec 13 23:57:24.558 CPU0: JIT: flushing data structures (compiled pages=914)
+Dec 13 23:57:33.868 CPU0: JIT: partial JIT flush (count=175)
+Dec 13 23:58:14.162 CPU0: JIT: flushing data structures (compiled pages=921)
+Dec 13 23:58:18.670 CPU0: JIT: partial JIT flush (count=181)
+Dec 13 23:58:23.867 CPU0: JIT: flushing data structures (compiled pages=916)
+Dec 13 23:58:30.240 CPU0: JIT: partial JIT flush (count=180)
+Dec 13 23:59:08.564 CPU0: JIT: flushing data structures (compiled pages=923)
+Dec 13 23:59:18.348 CPU0: JIT: partial JIT flush (count=170)
+Dec 13 23:59:21.349 CPU0: JIT: flushing data structures (compiled pages=918)
+Dec 13 23:59:28.365 CPU0: JIT: partial JIT flush (count=179)
+Dec 14 00:00:04.824 CPU0: JIT: flushing data structures (compiled pages=925)
+Dec 14 00:00:17.902 CPU0: JIT: partial JIT flush (count=172)
+Dec 14 00:00:21.222 CPU0: JIT: flushing data structures (compiled pages=921)
+Dec 14 00:00:24.566 CPU0: JIT: partial JIT flush (count=183)
+Dec 14 00:00:36.327 CPU0: JIT: flushing data structures (compiled pages=927)
+Dec 14 00:01:17.884 CPU0: JIT: partial JIT flush (count=146)
+Dec 14 00:01:21.219 CPU0: JIT: flushing data structures (compiled pages=923)
+Dec 14 00:01:24.563 CPU0: JIT: partial JIT flush (count=174)
+Dec 14 00:01:33.893 CPU0: JIT: flushing data structures (compiled pages=929)
+Dec 14 00:01:52.612 CPU0: JIT: partial JIT flush (count=168)
+Dec 14 00:02:17.880 CPU0: JIT: flushing data structures (compiled pages=926)
+Dec 14 00:02:21.225 CPU0: JIT: partial JIT flush (count=174)
+Dec 14 00:02:24.548 CPU0: JIT: flushing data structures (compiled pages=925)
+Dec 14 00:02:36.390 CPU0: JIT: partial JIT flush (count=175)
+Dec 14 00:03:17.886 CPU0: JIT: flushing data structures (compiled pages=928)
+Dec 14 00:03:21.214 CPU0: JIT: partial JIT flush (count=180)
+Dec 14 00:03:24.554 CPU0: JIT: flushing data structures (compiled pages=927)
+Dec 14 00:03:36.349 CPU0: JIT: partial JIT flush (count=176)
+Dec 14 00:04:17.905 CPU0: JIT: flushing data structures (compiled pages=930)
+Dec 14 00:04:21.210 CPU0: JIT: partial JIT flush (count=180)
+Dec 14 00:04:24.541 CPU0: JIT: flushing data structures (compiled pages=929)
+Dec 14 00:04:36.365 CPU0: JIT: partial JIT flush (count=175)
+Dec 14 00:05:17.871 CPU0: JIT: flushing data structures (compiled pages=932)
+Dec 14 00:05:21.230 CPU0: JIT: partial JIT flush (count=183)
+Dec 14 00:05:24.530 CPU0: JIT: flushing data structures (compiled pages=931)
+Dec 14 00:05:36.334 CPU0: JIT: partial JIT flush (count=176)
+Dec 14 00:06:10.534 CPU0: JIT: flushing data structures (compiled pages=937)
+Dec 14 00:06:18.341 CPU0: JIT: partial JIT flush (count=173)
+Dec 14 00:06:22.081 CPU0: JIT: flushing data structures (compiled pages=931)
+Dec 14 00:06:24.858 CPU0: JIT: partial JIT flush (count=186)
+Dec 14 00:07:02.097 CPU0: JIT: flushing data structures (compiled pages=939)
+Dec 14 00:07:17.895 CPU0: JIT: partial JIT flush (count=164)
+Dec 14 00:07:21.209 CPU0: JIT: flushing data structures (compiled pages=933)
+Dec 14 00:07:24.564 CPU0: JIT: partial JIT flush (count=181)
+Dec 14 00:07:33.988 CPU0: JIT: flushing data structures (compiled pages=941)
+Dec 14 00:08:17.852 CPU0: JIT: partial JIT flush (count=140)
+Dec 14 00:08:21.217 CPU0: JIT: flushing data structures (compiled pages=938)
+Dec 14 00:08:24.537 CPU0: JIT: partial JIT flush (count=180)
+Dec 14 00:08:36.336 CPU0: JIT: flushing data structures (compiled pages=943)
+Dec 14 00:09:17.870 CPU0: JIT: partial JIT flush (count=141)
+Dec 14 00:09:21.181 CPU0: JIT: flushing data structures (compiled pages=940)
+Dec 14 00:09:24.529 CPU0: JIT: partial JIT flush (count=180)
+Dec 14 00:09:34.009 CPU0: JIT: flushing data structures (compiled pages=945)
+Dec 14 00:10:17.859 CPU0: JIT: partial JIT flush (count=140)
+Dec 14 00:10:21.217 CPU0: JIT: flushing data structures (compiled pages=944)
+Dec 14 00:10:24.532 CPU0: JIT: partial JIT flush (count=180)
+Dec 14 00:10:36.335 CPU0: JIT: flushing data structures (compiled pages=947)
+Dec 14 00:11:17.858 CPU0: JIT: partial JIT flush (count=141)
+Dec 14 00:11:21.178 CPU0: JIT: flushing data structures (compiled pages=944)
+Dec 14 00:11:24.537 CPU0: JIT: partial JIT flush (count=180)
+Dec 14 00:11:35.412 CPU0: JIT: flushing data structures (compiled pages=949)
+Dec 14 00:12:17.875 CPU0: JIT: partial JIT flush (count=140)
+Dec 14 00:12:21.175 CPU0: JIT: flushing data structures (compiled pages=946)
+Dec 14 00:12:24.537 CPU0: JIT: partial JIT flush (count=180)
+Dec 14 00:12:34.029 CPU0: JIT: flushing data structures (compiled pages=951)
+Dec 14 00:13:17.865 CPU0: JIT: partial JIT flush (count=140)
+Dec 14 00:13:21.190 CPU0: JIT: flushing data structures (compiled pages=947)
+Dec 14 00:13:24.435 CPU0: JIT: partial JIT flush (count=182)
+Dec 14 00:13:35.001 CPU0: JIT: flushing data structures (compiled pages=953)
+Dec 14 00:14:17.855 CPU0: JIT: partial JIT flush (count=140)
+Dec 14 00:14:21.162 CPU0: JIT: flushing data structures (compiled pages=950)
+Dec 14 00:14:24.539 CPU0: JIT: partial JIT flush (count=180)
+Dec 14 00:14:34.051 CPU0: JIT: flushing data structures (compiled pages=955)
+Dec 14 00:15:10.678 CPU0: JIT: partial JIT flush (count=143)
+Dec 14 00:15:18.312 CPU0: JIT: flushing data structures (compiled pages=952)
+Dec 14 00:15:21.326 CPU0: JIT: partial JIT flush (count=182)
+Dec 14 00:15:30.223 CPU0: JIT: flushing data structures (compiled pages=957)
+Dec 14 00:16:15.040 CPU0: JIT: partial JIT flush (count=149)
+Dec 14 00:16:19.448 CPU0: JIT: flushing data structures (compiled pages=954)
+Dec 14 00:16:24.515 CPU0: JIT: partial JIT flush (count=176)
+Dec 14 00:16:35.391 CPU0: JIT: flushing data structures (compiled pages=959)
+Dec 14 00:17:17.843 CPU0: JIT: partial JIT flush (count=140)
+Dec 14 00:17:21.210 CPU0: JIT: flushing data structures (compiled pages=956)
+Dec 14 00:17:24.547 CPU0: JIT: partial JIT flush (count=180)
+Dec 14 00:17:34.083 CPU0: JIT: flushing data structures (compiled pages=962)
+Dec 14 00:18:17.885 CPU0: JIT: partial JIT flush (count=141)
+Dec 14 00:18:21.177 CPU0: JIT: flushing data structures (compiled pages=958)
+Dec 14 00:18:24.526 CPU0: JIT: partial JIT flush (count=180)
+Dec 14 00:18:34.091 CPU0: JIT: flushing data structures (compiled pages=964)
+Dec 14 00:19:17.869 CPU0: JIT: partial JIT flush (count=141)
+Dec 14 00:19:21.169 CPU0: JIT: flushing data structures (compiled pages=961)
+Dec 14 00:19:24.505 CPU0: JIT: partial JIT flush (count=180)
+Dec 14 00:19:33.598 CPU0: JIT: flushing data structures (compiled pages=966)
+Dec 14 00:20:17.829 CPU0: JIT: partial JIT flush (count=145)
+Dec 14 00:20:20.375 CPU0: JIT: flushing data structures (compiled pages=961)
+Dec 14 00:20:23.117 CPU0: JIT: partial JIT flush (count=182)
+Dec 14 00:20:24.506 CPU0: JIT: flushing data structures (compiled pages=961)
+Dec 14 00:20:36.316 CPU0: JIT: partial JIT flush (count=176)
+Dec 14 00:21:17.845 CPU0: JIT: flushing data structures (compiled pages=963)
+Dec 14 00:21:21.186 CPU0: JIT: partial JIT flush (count=182)
+Dec 14 00:21:24.514 CPU0: JIT: flushing data structures (compiled pages=963)
+Dec 14 00:21:36.347 CPU0: JIT: partial JIT flush (count=175)
+Dec 14 00:22:17.851 CPU0: JIT: flushing data structures (compiled pages=965)
+Dec 14 00:22:21.190 CPU0: JIT: partial JIT flush (count=181)
+Dec 14 00:22:24.527 CPU0: JIT: flushing data structures (compiled pages=965)
+Dec 14 00:22:36.307 CPU0: JIT: partial JIT flush (count=175)
+Dec 14 00:23:17.861 CPU0: JIT: flushing data structures (compiled pages=967)
+Dec 14 00:23:21.182 CPU0: JIT: partial JIT flush (count=180)
+Dec 14 00:23:24.553 CPU0: JIT: flushing data structures (compiled pages=966)
+Dec 14 00:23:33.193 CPU0: JIT: partial JIT flush (count=182)
+Dec 14 00:24:16.866 CPU0: JIT: flushing data structures (compiled pages=973)
+Dec 14 00:24:21.195 CPU0: JIT: partial JIT flush (count=181)
+Dec 14 00:24:24.501 CPU0: JIT: flushing data structures (compiled pages=968)
+Dec 14 00:24:36.294 CPU0: JIT: partial JIT flush (count=176)
+Dec 14 00:25:17.826 CPU0: JIT: flushing data structures (compiled pages=970)
+Dec 14 00:25:21.163 CPU0: JIT: partial JIT flush (count=183)
+Dec 14 00:25:24.513 CPU0: JIT: flushing data structures (compiled pages=969)
+Dec 14 00:25:34.602 CPU0: JIT: partial JIT flush (count=178)
+Dec 14 00:26:17.854 CPU0: JIT: flushing data structures (compiled pages=972)
+Dec 14 00:26:21.172 CPU0: JIT: partial JIT flush (count=181)
+Dec 14 00:26:24.526 CPU0: JIT: flushing data structures (compiled pages=972)
+Dec 14 00:26:33.592 CPU0: JIT: partial JIT flush (count=180)
+Dec 14 00:27:16.873 CPU0: JIT: flushing data structures (compiled pages=978)
+Dec 14 00:27:21.146 CPU0: JIT: partial JIT flush (count=181)
+Dec 14 00:27:24.485 CPU0: JIT: flushing data structures (compiled pages=972)
+Dec 14 00:27:33.599 CPU0: JIT: partial JIT flush (count=180)
+Dec 14 00:28:17.213 CPU0: JIT: flushing data structures (compiled pages=978)
+Dec 14 00:28:21.145 CPU0: JIT: partial JIT flush (count=180)
+Dec 14 00:28:24.506 CPU0: JIT: flushing data structures (compiled pages=974)
+Dec 14 00:28:34.246 CPU0: JIT: partial JIT flush (count=180)
+Dec 14 00:29:17.827 CPU0: JIT: flushing data structures (compiled pages=977)
+Dec 14 00:29:21.187 CPU0: JIT: partial JIT flush (count=182)
+Dec 14 00:29:24.504 CPU0: JIT: flushing data structures (compiled pages=976)
+Dec 14 00:29:30.843 CPU0: JIT: partial JIT flush (count=182)
+Dec 14 00:30:17.821 CPU0: JIT: flushing data structures (compiled pages=982)
+Dec 14 00:30:21.160 CPU0: JIT: partial JIT flush (count=183)
+Dec 14 00:30:24.486 CPU0: JIT: flushing data structures (compiled pages=977)
+Dec 14 00:30:32.337 CPU0: JIT: partial JIT flush (count=182)
+Dec 14 00:31:17.799 CPU0: JIT: flushing data structures (compiled pages=983)
+Dec 14 00:31:21.163 CPU0: JIT: partial JIT flush (count=181)
+Dec 14 00:31:24.495 CPU0: JIT: flushing data structures (compiled pages=978)
+Dec 14 00:31:34.287 CPU0: JIT: partial JIT flush (count=180)
+Dec 14 00:32:17.834 CPU0: JIT: flushing data structures (compiled pages=981)
+Dec 14 00:32:21.177 CPU0: JIT: partial JIT flush (count=181)
+Dec 14 00:32:24.503 CPU0: JIT: flushing data structures (compiled pages=984)
+Dec 14 00:32:31.278 CPU0: JIT: partial JIT flush (count=183)
+Dec 14 00:32:52.475 CPU0: JIT: flushing data structures (compiled pages=986)
+Dec 14 00:33:17.826 CPU0: JIT: partial JIT flush (count=154)
+Dec 14 00:33:21.208 CPU0: JIT: flushing data structures (compiled pages=980)
+Dec 14 00:33:24.819 CPU0: JIT: partial JIT flush (count=180)
+Dec 14 00:33:41.196 CPU0: JIT: flushing data structures (compiled pages=988)
+Dec 14 00:34:17.858 CPU0: JIT: partial JIT flush (count=148)
+Dec 14 00:34:21.156 CPU0: JIT: flushing data structures (compiled pages=982)
+Dec 14 00:34:24.510 CPU0: JIT: partial JIT flush (count=182)
+Dec 14 00:34:32.186 CPU0: JIT: flushing data structures (compiled pages=990)
+Dec 14 00:35:16.883 CPU0: JIT: partial JIT flush (count=149)
+Dec 14 00:35:18.310 CPU0: JIT: flushing data structures (compiled pages=988)
+Dec 14 00:35:21.339 CPU0: JIT: partial JIT flush (count=181)
+Dec 14 00:35:24.844 CPU0: JIT: flushing data structures (compiled pages=991)
+Dec 14 00:35:27.967 CPU0: JIT: partial JIT flush (count=179)
+Dec 14 00:35:33.571 CPU0: JIT: flushing data structures (compiled pages=989)
+Dec 14 00:35:34.346 CPU0: JIT: partial JIT flush (count=185)
+Dec 14 00:35:37.634 CPU0: JIT: flushing data structures (compiled pages=987)
+Dec 14 00:35:45.372 CPU0: JIT: partial JIT flush (count=168)
+Dec 14 00:36:17.846 CPU0: JIT: flushing data structures (compiled pages=988)
+Dec 14 00:36:21.171 CPU0: JIT: partial JIT flush (count=181)
+Dec 14 00:36:24.496 CPU0: JIT: flushing data structures (compiled pages=987)
+Dec 14 00:36:31.281 CPU0: JIT: partial JIT flush (count=179)
+Dec 14 00:37:15.548 CPU0: JIT: flushing data structures (compiled pages=994)
+Dec 14 00:37:20.206 CPU0: JIT: partial JIT flush (count=174)
+Dec 14 00:37:24.514 CPU0: JIT: flushing data structures (compiled pages=988)
+Dec 14 00:37:33.596 CPU0: JIT: partial JIT flush (count=178)
+Dec 14 00:38:06.236 CPU0: JIT: flushing data structures (compiled pages=996)
+Dec 14 00:38:17.832 CPU0: JIT: partial JIT flush (count=167)
+Dec 14 00:38:21.163 CPU0: JIT: flushing data structures (compiled pages=991)
+Dec 14 00:38:24.475 CPU0: JIT: partial JIT flush (count=180)
+Dec 14 00:38:33.568 CPU0: JIT: flushing data structures (compiled pages=998)
+Dec 14 00:39:07.708 CPU0: JIT: partial JIT flush (count=151)
+Dec 14 00:39:17.831 CPU0: JIT: flushing data structures (compiled pages=995)
+Dec 14 00:39:21.185 CPU0: JIT: partial JIT flush (count=178)
+Dec 14 00:39:24.813 CPU0: JIT: flushing data structures (compiled pages=997)
+Dec 14 00:39:55.253 CPU0: JIT: partial JIT flush (count=155)
+Dec 14 00:40:17.231 CPU0: JIT: flushing data structures (compiled pages=996)
+Dec 14 00:40:17.356 CPU0: JIT: partial JIT flush (count=200)
+Dec 14 00:40:17.813 CPU0: JIT: flushing data structures (compiled pages=1045)
+Dec 14 00:40:21.174 CPU0: JIT: partial JIT flush (count=184)
+Dec 14 00:40:24.494 CPU0: JIT: flushing data structures (compiled pages=1046)
+Dec 14 00:40:34.368 CPU0: JIT: partial JIT flush (count=178)
+Dec 14 00:41:17.818 CPU0: JIT: flushing data structures (compiled pages=1048)
+Dec 14 00:41:21.155 CPU0: JIT: partial JIT flush (count=182)
+Dec 14 00:41:24.498 CPU0: JIT: flushing data structures (compiled pages=1047)
+Dec 14 00:41:34.429 CPU0: JIT: partial JIT flush (count=178)
+Dec 14 00:41:58.854 CPU0: JIT: flushing data structures (compiled pages=1054)
+Dec 14 00:42:17.840 CPU0: JIT: partial JIT flush (count=157)
+Dec 14 00:42:21.181 CPU0: JIT: flushing data structures (compiled pages=1051)
+Dec 14 00:42:24.493 CPU0: JIT: partial JIT flush (count=178)
+Dec 14 00:42:31.427 CPU0: JIT: flushing data structures (compiled pages=1056)
+Dec 14 00:42:40.552 CPU0: JIT: partial JIT flush (count=181)
+Dec 14 00:42:41.444 CPU0: JIT: flushing data structures (compiled pages=1104)
+Dec 14 00:43:17.848 CPU0: JIT: partial JIT flush (count=141)
+Dec 14 00:43:21.162 CPU0: JIT: flushing data structures (compiled pages=1102)
+Dec 14 00:43:24.496 CPU0: JIT: partial JIT flush (count=177)
+Dec 14 00:43:33.571 CPU0: JIT: flushing data structures (compiled pages=1108)
+Dec 14 00:44:02.206 CPU0: JIT: partial JIT flush (count=154)
+Dec 14 00:44:17.831 CPU0: JIT: flushing data structures (compiled pages=1105)
+Dec 14 00:44:21.191 CPU0: JIT: partial JIT flush (count=179)
+Dec 14 00:44:24.509 CPU0: JIT: flushing data structures (compiled pages=1108)
+Dec 14 00:44:33.584 CPU0: JIT: partial JIT flush (count=179)
+Dec 14 00:44:47.142 CPU0: JIT: flushing data structures (compiled pages=1108)
+Dec 14 00:44:47.964 CPU0: JIT: partial JIT flush (count=166)
+Dec 14 00:44:48.023 CPU0: JIT: flushing data structures (compiled pages=1108)
+Dec 14 00:44:48.090 CPU0: JIT: partial JIT flush (count=197)
+Dec 14 00:44:48.147 CPU0: JIT: flushing data structures (compiled pages=1115)
+Dec 14 00:44:48.171 CPU0: MP_FPGA: read from addr 0x0, pc=0x6093ceec
+Dec 14 00:44:48.208 CPU0: JIT: partial JIT flush (count=200)
+Dec 14 00:44:48.261 CPU0: JIT: flushing data structures (compiled pages=1109)
+Dec 14 00:44:48.319 CPU0: JIT: partial JIT flush (count=194)
+Dec 14 00:44:48.373 CPU0: JIT: flushing data structures (compiled pages=1122)
+Dec 14 00:44:48.432 CPU0: JIT: partial JIT flush (count=194)
+Dec 14 00:44:48.486 CPU0: JIT: flushing data structures (compiled pages=1116)
+Dec 14 00:44:48.544 CPU0: JIT: partial JIT flush (count=192)
+Dec 14 00:44:48.595 CPU0: JIT: flushing data structures (compiled pages=1117)
+Dec 14 00:44:48.653 CPU0: JIT: partial JIT flush (count=195)
+Dec 14 00:44:48.707 CPU0: JIT: flushing data structures (compiled pages=1129)
+Dec 14 00:44:48.769 CPU0: JIT: partial JIT flush (count=198)
+Dec 14 00:44:48.822 CPU0: JIT: flushing data structures (compiled pages=1116)
+Dec 14 00:44:48.886 CPU0: JIT: partial JIT flush (count=193)
+Dec 14 00:44:49.196 CPU0: JIT: flushing data structures (compiled pages=1125)
+Dec 14 00:45:13.704 CPU0: JIT: partial JIT flush (count=141)
+Dec 14 00:45:17.855 CPU0: JIT: flushing data structures (compiled pages=1123)
+Dec 14 00:45:21.293 CPU0: JIT: partial JIT flush (count=179)
+Dec 14 00:45:24.829 CPU0: JIT: flushing data structures (compiled pages=1128)
+Dec 14 00:45:41.168 CPU0: JIT: partial JIT flush (count=170)
+Dec 14 00:46:17.847 CPU0: JIT: flushing data structures (compiled pages=1126)
+Dec 14 00:46:21.136 CPU0: JIT: partial JIT flush (count=179)
+Dec 14 00:46:24.497 CPU0: JIT: flushing data structures (compiled pages=1125)
+Dec 14 00:46:35.349 CPU0: JIT: partial JIT flush (count=176)
+Dec 14 00:47:17.812 CPU0: JIT: flushing data structures (compiled pages=1127)
+Dec 14 00:47:21.149 CPU0: JIT: partial JIT flush (count=180)
+Dec 14 00:47:24.504 CPU0: JIT: flushing data structures (compiled pages=1126)
+Dec 14 00:47:34.451 CPU0: JIT: partial JIT flush (count=179)
+Dec 14 00:48:17.840 CPU0: JIT: flushing data structures (compiled pages=1129)
+Dec 14 00:48:21.172 CPU0: JIT: partial JIT flush (count=180)
+Dec 14 00:48:24.504 CPU0: JIT: flushing data structures (compiled pages=1129)
+Dec 14 00:48:36.281 CPU0: JIT: partial JIT flush (count=175)
+Dec 14 00:49:17.809 CPU0: JIT: flushing data structures (compiled pages=1131)
+Dec 14 00:49:21.142 CPU0: JIT: partial JIT flush (count=181)
+Dec 14 00:49:24.468 CPU0: JIT: flushing data structures (compiled pages=1130)
+Dec 14 00:49:34.461 CPU0: JIT: partial JIT flush (count=178)
+Dec 14 00:50:17.843 CPU0: JIT: flushing data structures (compiled pages=1133)
+Dec 14 00:50:21.161 CPU0: JIT: partial JIT flush (count=182)
+Dec 14 00:50:24.468 CPU0: JIT: flushing data structures (compiled pages=1133)
+Dec 14 00:50:36.266 CPU0: JIT: partial JIT flush (count=175)
+Dec 14 00:51:17.843 CPU0: JIT: flushing data structures (compiled pages=1135)
+Dec 14 00:51:21.165 CPU0: JIT: partial JIT flush (count=181)
+Dec 14 00:51:23.085 CPU0: JIT: flushing data structures (compiled pages=1131)
+Dec 14 00:51:24.524 CPU0: JIT: partial JIT flush (count=180)
+Dec 14 00:51:24.912 CPU0: JIT: flushing data structures (compiled pages=1138)
+Dec 14 00:51:33.964 CPU0: JIT: partial JIT flush (count=172)
+Dec 14 00:51:56.525 CPU0: JIT: flushing data structures (compiled pages=1139)
+Dec 14 00:52:17.831 CPU0: JIT: partial JIT flush (count=151)
+Dec 14 00:52:21.124 CPU0: JIT: flushing data structures (compiled pages=1138)
+Dec 14 00:52:24.521 CPU0: JIT: partial JIT flush (count=179)
+Dec 14 00:52:34.512 CPU0: JIT: flushing data structures (compiled pages=1143)
+Dec 14 00:53:17.800 CPU0: JIT: partial JIT flush (count=139)
+Dec 14 00:53:21.132 CPU0: JIT: flushing data structures (compiled pages=1140)
+Dec 14 00:53:24.510 CPU0: JIT: partial JIT flush (count=178)
+Dec 14 00:53:31.264 CPU0: JIT: flushing data structures (compiled pages=1146)
+Dec 14 00:53:49.384 CPU0: JIT: partial JIT flush (count=166)
+Dec 14 00:54:17.803 CPU0: JIT: flushing data structures (compiled pages=1141)
+Dec 14 00:54:21.162 CPU0: JIT: partial JIT flush (count=179)
+Dec 14 00:54:24.519 CPU0: JIT: flushing data structures (compiled pages=1141)
+Dec 14 00:54:34.542 CPU0: JIT: partial JIT flush (count=177)
+Dec 14 00:54:45.873 CPU0: JIT: flushing data structures (compiled pages=1142)
+Dec 14 00:54:45.939 CPU0: JIT: partial JIT flush (count=195)
+Dec 14 00:54:50.878 CPU0: JIT: flushing data structures (compiled pages=1141)
+Dec 14 00:54:51.543 CPU0: JIT: partial JIT flush (count=189)
+Dec 14 00:54:56.944 CPU0: JIT: flushing data structures (compiled pages=1143)
+Dec 14 00:54:58.279 CPU0: JIT: partial JIT flush (count=186)
+Dec 14 00:55:00.462 CPU0: JIT: flushing data structures (compiled pages=1141)
+Dec 14 00:55:01.571 CPU0: JIT: partial JIT flush (count=187)
+Dec 14 00:55:04.555 CPU0: JIT: flushing data structures (compiled pages=1145)
+Dec 14 00:55:08.284 CPU0: JIT: partial JIT flush (count=167)
+Dec 14 00:55:09.187 CPU0: JIT: flushing data structures (compiled pages=1140)
+Dec 14 00:55:14.592 CPU0: JIT: partial JIT flush (count=162)
+Dec 14 00:55:17.796 CPU0: JIT: flushing data structures (compiled pages=1141)
+Dec 14 00:55:19.516 CPU0: JIT: partial JIT flush (count=185)
+Dec 14 00:55:19.951 CPU0: JIT: flushing data structures (compiled pages=1143)
+Dec 14 00:55:21.146 CPU0: JIT: partial JIT flush (count=184)
+Dec 14 00:55:21.171 ROM: trying to read bootvar 'WARM_REBOOT'
+Dec 14 00:55:21.198 CPU0: JIT: flushing data structures (compiled pages=1149)
+Dec 14 00:55:21.257 CPU0: JIT: partial JIT flush (count=197)
+Dec 14 00:55:21.309 CPU0: JIT: flushing data structures (compiled pages=1151)
+Dec 14 00:55:21.366 CPU0: JIT: partial JIT flush (count=192)
+Dec 14 00:55:21.374 CPU0: MP_FPGA: read from addr 0x0, pc=0x6093ceec
+Dec 14 00:55:21.415 CPU0: JIT: flushing data structures (compiled pages=1153)
+Dec 14 00:55:21.472 CPU0: JIT: partial JIT flush (count=197)
+Dec 14 00:55:21.528 CPU0: JIT: flushing data structures (compiled pages=1152)
+Dec 14 00:55:21.590 CPU0: JIT: partial JIT flush (count=198)
+Dec 14 00:55:21.643 CPU0: JIT: flushing data structures (compiled pages=1153)
+Dec 14 00:55:21.700 CPU0: JIT: partial JIT flush (count=198)
+Dec 14 00:55:21.755 CPU0: JIT: flushing data structures (compiled pages=1160)
+Dec 14 00:55:21.818 CPU0: JIT: partial JIT flush (count=196)
+Dec 14 00:55:21.870 CPU0: JIT: flushing data structures (compiled pages=1158)
+Dec 14 00:55:21.928 CPU0: JIT: partial JIT flush (count=198)
+Dec 14 00:55:21.981 CPU0: JIT: flushing data structures (compiled pages=1163)
+Dec 14 00:55:22.037 CPU0: JIT: partial JIT flush (count=185)
+Dec 14 00:55:22.093 CPU0: JIT: flushing data structures (compiled pages=1161)
+Dec 14 00:55:22.201 CPU0: JIT: partial JIT flush (count=186)
+Dec 14 00:55:24.917 CPU0: JIT: flushing data structures (compiled pages=1161)
+Dec 14 00:55:45.357 CPU0: JIT: partial JIT flush (count=163)
+Dec 14 00:55:57.906 CPU0: JIT: flushing data structures (compiled pages=1161)
+Dec 14 00:55:57.995 CPU0: JIT: partial JIT flush (count=202)
+Dec 14 00:55:58.231 CPU0: JIT: flushing data structures (compiled pages=1211)
+Dec 14 00:56:17.535 CPU0: JIT: partial JIT flush (count=161)
+Dec 14 00:56:17.952 CPU0: JIT: flushing data structures (compiled pages=1260)
+Dec 14 00:56:22.370 CPU0: JIT: partial JIT flush (count=177)
+Dec 14 00:56:24.562 CPU0: JIT: flushing data structures (compiled pages=1265)
+Dec 14 00:56:35.359 CPU0: JIT: partial JIT flush (count=177)
+Dec 14 00:57:17.817 CPU0: JIT: flushing data structures (compiled pages=1262)
+Dec 14 00:57:21.330 CPU0: JIT: partial JIT flush (count=180)
+Dec 14 00:57:24.544 CPU0: JIT: flushing data structures (compiled pages=1262)
+Dec 14 00:57:33.694 CPU0: JIT: partial JIT flush (count=178)
+Dec 14 00:57:57.727 CPU0: JIT: flushing data structures (compiled pages=1268)
+Dec 14 00:58:17.827 CPU0: JIT: partial JIT flush (count=155)
+Dec 14 00:58:21.310 CPU0: JIT: flushing data structures (compiled pages=1263)
+Dec 14 00:58:24.555 CPU0: JIT: partial JIT flush (count=180)
+Dec 14 00:58:33.748 CPU0: JIT: flushing data structures (compiled pages=1270)
+Dec 14 00:59:03.684 CPU0: JIT: partial JIT flush (count=154)
+Dec 14 00:59:08.297 CPU0: JIT: flushing data structures (compiled pages=1264)
+Dec 14 00:59:09.175 CPU0: JIT: partial JIT flush (count=178)
+Dec 14 00:59:09.758 CPU0: JIT: flushing data structures (compiled pages=1269)
+Dec 14 00:59:09.820 CPU0: JIT: partial JIT flush (count=195)
+Dec 14 00:59:09.874 CPU0: JIT: flushing data structures (compiled pages=1274)
+Dec 14 00:59:09.923 CPU0: MP_FPGA: read from addr 0x0, pc=0x6093ceec
+Dec 14 00:59:09.932 CPU0: JIT: partial JIT flush (count=202)
+Dec 14 00:59:09.983 CPU0: JIT: flushing data structures (compiled pages=1269)
+Dec 14 00:59:10.040 CPU0: JIT: partial JIT flush (count=193)
+Dec 14 00:59:10.095 CPU0: JIT: flushing data structures (compiled pages=1281)
+Dec 14 00:59:10.151 CPU0: JIT: partial JIT flush (count=197)
+Dec 14 00:59:10.203 CPU0: JIT: flushing data structures (compiled pages=1274)
+Dec 14 00:59:10.261 CPU0: JIT: partial JIT flush (count=201)
+Dec 14 00:59:10.311 CPU0: JIT: flushing data structures (compiled pages=1280)
+Dec 14 00:59:10.368 CPU0: JIT: partial JIT flush (count=195)
+Dec 14 00:59:10.421 CPU0: JIT: flushing data structures (compiled pages=1288)
+Dec 14 00:59:10.480 CPU0: JIT: partial JIT flush (count=197)
+Dec 14 00:59:10.532 CPU0: JIT: flushing data structures (compiled pages=1280)
+Dec 14 00:59:10.590 CPU0: JIT: partial JIT flush (count=194)
+Dec 14 00:59:10.651 CPU0: JIT: flushing data structures (compiled pages=1283)
+Dec 14 00:59:17.811 CPU0: JIT: partial JIT flush (count=161)
+Dec 14 00:59:21.305 CPU0: JIT: flushing data structures (compiled pages=1284)
+Dec 14 00:59:24.566 CPU0: JIT: partial JIT flush (count=178)
+Dec 14 00:59:32.179 CPU0: JIT: flushing data structures (compiled pages=1290)
+Dec 14 01:00:11.125 CPU0: JIT: partial JIT flush (count=150)
+Dec 14 01:00:18.290 CPU0: JIT: flushing data structures (compiled pages=1286)
+Dec 14 01:00:22.134 CPU0: JIT: partial JIT flush (count=180)
+Dec 14 01:00:24.983 CPU0: JIT: flushing data structures (compiled pages=1291)
+Dec 14 01:01:07.897 CPU0: JIT: partial JIT flush (count=148)
+Dec 14 01:01:17.797 CPU0: JIT: flushing data structures (compiled pages=1289)
+Dec 14 01:01:21.338 CPU0: JIT: partial JIT flush (count=179)
+Dec 14 01:01:24.990 CPU0: JIT: flushing data structures (compiled pages=1291)
+Dec 14 01:02:01.983 CPU0: JIT: partial JIT flush (count=151)
+Dec 14 01:02:02.878 CPU0: JIT: flushing data structures (compiled pages=1291)
+Dec 14 01:02:17.823 CPU0: JIT: partial JIT flush (count=156)
+Dec 14 01:02:21.306 CPU0: JIT: flushing data structures (compiled pages=1291)
+Dec 14 01:02:24.628 CPU0: JIT: partial JIT flush (count=179)
+Dec 14 01:02:33.700 CPU0: JIT: flushing data structures (compiled pages=1295)
+Dec 14 01:03:12.245 CPU0: JIT: partial JIT flush (count=150)
+Dec 14 01:03:17.803 CPU0: JIT: flushing data structures (compiled pages=1291)
+Dec 14 01:03:18.325 CPU0: JIT: partial JIT flush (count=189)
+Dec 14 01:03:21.327 CPU0: JIT: flushing data structures (compiled pages=1292)
+Dec 14 01:03:24.616 CPU0: JIT: partial JIT flush (count=177)
+Dec 14 01:03:32.920 CPU0: JIT: flushing data structures (compiled pages=1296)
+Dec 14 01:04:16.841 CPU0: JIT: partial JIT flush (count=144)
+Dec 14 01:04:20.173 CPU0: JIT: flushing data structures (compiled pages=1291)
+Dec 14 01:04:24.642 CPU0: JIT: partial JIT flush (count=177)
+Dec 14 01:04:33.036 CPU0: JIT: flushing data structures (compiled pages=1298)
+Dec 14 01:05:09.686 CPU0: JIT: partial JIT flush (count=150)
+Dec 14 01:05:18.284 CPU0: JIT: flushing data structures (compiled pages=1294)
+Dec 14 01:05:22.165 CPU0: JIT: partial JIT flush (count=180)
+Dec 14 01:05:26.901 CPU0: JIT: flushing data structures (compiled pages=1298)
+Dec 14 01:05:45.326 CPU0: JIT: partial JIT flush (count=167)
+Dec 14 01:06:16.852 CPU0: JIT: flushing data structures (compiled pages=1299)
+Dec 14 01:06:21.304 CPU0: JIT: partial JIT flush (count=179)
+Dec 14 01:06:24.663 CPU0: JIT: flushing data structures (compiled pages=1295)
+Dec 14 01:06:34.665 CPU0: JIT: partial JIT flush (count=176)
+Dec 14 01:07:17.821 CPU0: JIT: flushing data structures (compiled pages=1297)
+Dec 14 01:07:21.321 CPU0: JIT: partial JIT flush (count=181)
+Dec 14 01:07:24.705 CPU0: JIT: flushing data structures (compiled pages=1297)
+Dec 14 01:07:34.668 CPU0: JIT: partial JIT flush (count=176)
+Dec 14 01:08:17.834 CPU0: JIT: flushing data structures (compiled pages=1299)
+Dec 14 01:08:21.312 CPU0: JIT: partial JIT flush (count=183)
+Dec 14 01:08:24.701 CPU0: JIT: flushing data structures (compiled pages=1299)
+Dec 14 01:08:34.679 CPU0: JIT: partial JIT flush (count=177)
+Dec 14 01:09:17.835 CPU0: JIT: flushing data structures (compiled pages=1301)
+Dec 14 01:09:21.324 CPU0: JIT: partial JIT flush (count=182)
+Dec 14 01:09:24.670 CPU0: JIT: flushing data structures (compiled pages=1301)
+Dec 14 01:09:33.711 CPU0: JIT: partial JIT flush (count=179)
+Dec 14 01:10:14.969 CPU0: JIT: flushing data structures (compiled pages=1307)
+Dec 14 01:10:20.184 CPU0: JIT: partial JIT flush (count=172)
+Dec 14 01:10:24.688 CPU0: JIT: flushing data structures (compiled pages=1302)
+Dec 14 01:10:30.183 CPU0: JIT: partial JIT flush (count=178)
+Dec 14 01:10:59.917 CPU0: JIT: flushing data structures (compiled pages=1308)
+Dec 14 01:11:17.798 CPU0: JIT: partial JIT flush (count=157)
+Dec 14 01:11:21.320 CPU0: JIT: flushing data structures (compiled pages=1305)
+Dec 14 01:11:24.725 CPU0: JIT: partial JIT flush (count=178)
+Dec 14 01:11:33.702 CPU0: JIT: flushing data structures (compiled pages=1311)
+Dec 14 01:12:10.940 CPU0: JIT: partial JIT flush (count=150)
+Dec 14 01:12:18.290 CPU0: JIT: flushing data structures (compiled pages=1308)
+Dec 14 01:12:22.135 CPU0: JIT: partial JIT flush (count=174)
+Dec 14 01:12:25.084 CPU0: JIT: flushing data structures (compiled pages=1311)
+Dec 14 01:13:15.758 CPU0: JIT: partial JIT flush (count=141)
+Dec 14 01:13:20.145 CPU0: JIT: flushing data structures (compiled pages=1309)
+Dec 14 01:13:21.316 CPU0: JIT: partial JIT flush (count=181)
+Dec 14 01:13:24.719 CPU0: JIT: flushing data structures (compiled pages=1310)
+Dec 14 01:13:37.134 CPU0: JIT: partial JIT flush (count=175)
+Dec 14 01:14:17.780 CPU0: JIT: flushing data structures (compiled pages=1312)
+Dec 14 01:14:21.302 CPU0: JIT: partial JIT flush (count=181)
+Dec 14 01:14:24.724 CPU0: JIT: flushing data structures (compiled pages=1316)
+Dec 14 01:14:37.139 CPU0: JIT: partial JIT flush (count=174)
+Dec 14 01:15:17.777 CPU0: JIT: flushing data structures (compiled pages=1316)
+Dec 14 01:15:21.336 CPU0: JIT: partial JIT flush (count=182)
+Dec 14 01:15:24.744 CPU0: JIT: flushing data structures (compiled pages=1312)
+Dec 14 01:15:37.129 CPU0: JIT: partial JIT flush (count=174)
+Dec 14 01:16:17.805 CPU0: JIT: flushing data structures (compiled pages=1314)
+Dec 14 01:16:21.306 CPU0: JIT: partial JIT flush (count=181)
+Dec 14 01:16:24.745 CPU0: JIT: flushing data structures (compiled pages=1315)
+Dec 14 01:16:36.975 CPU0: JIT: partial JIT flush (count=175)
+Dec 14 01:17:17.809 CPU0: JIT: flushing data structures (compiled pages=1319)
+Dec 14 01:17:21.309 CPU0: JIT: partial JIT flush (count=183)
+Dec 14 01:17:24.774 CPU0: JIT: flushing data structures (compiled pages=1316)
+Dec 14 01:17:37.150 CPU0: JIT: partial JIT flush (count=175)
+Dec 14 01:18:17.830 CPU0: JIT: flushing data structures (compiled pages=1319)
+Dec 14 01:18:21.328 CPU0: JIT: partial JIT flush (count=177)
+Dec 14 01:18:24.788 CPU0: JIT: flushing data structures (compiled pages=1318)
+Dec 14 01:18:37.153 CPU0: JIT: partial JIT flush (count=174)
+Dec 14 01:19:17.811 CPU0: JIT: flushing data structures (compiled pages=1321)
+Dec 14 01:19:21.321 CPU0: JIT: partial JIT flush (count=177)
+Dec 14 01:19:24.783 CPU0: JIT: flushing data structures (compiled pages=1320)
+Dec 14 01:19:37.150 CPU0: JIT: partial JIT flush (count=175)
